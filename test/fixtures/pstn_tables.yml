@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zone: 1
+  scope: MyString
+  operator_name: MyString
+  operator: 1
+  zone_name: MyString
+  zone_symbol: MyString
+  numbering_area: MyString
+  change_date: 2019-03-19 01:42:08
+
+two:
+  zone: 1
+  scope: MyString
+  operator_name: MyString
+  operator: 1
+  zone_name: MyString
+  zone_symbol: MyString
+  numbering_area: MyString
+  change_date: 2019-03-19 01:42:08

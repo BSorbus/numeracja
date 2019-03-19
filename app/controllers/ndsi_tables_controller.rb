@@ -1,0 +1,2 @@
+class NdsiTablesController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class HescTablesController < ApplicationController
+end

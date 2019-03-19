@@ -1,0 +1,2 @@
+class PstnTablesController < ApplicationController
+end

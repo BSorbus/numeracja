@@ -1,0 +1,2 @@
+class IspcTablesController < ApplicationController
+end

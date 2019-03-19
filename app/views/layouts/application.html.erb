@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "UKE Numeracja" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "UKE Numeracja" %>">
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag asset_path('favicon.ico'), :rel => 'shortcut icon', :type => "image/x-icon" %>
+
+
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <%= yield(:javascript) %> 
+
+    <%= piwik_tracking_tag %>
+  </head>
+
+  <body>
+    <div class="content">
+      <%= render 'layouts/header', cached: true %>
+      <main>
+        <%= render 'layouts/messages' %>
+        <%= yield(:form_errors) %>       
+        <%= yield %>
+      </main>
+    </div>
+    <%= render 'layouts/footer', cached: true %>
+  </body>
+</html>

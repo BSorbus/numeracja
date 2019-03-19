@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scope: MyString
+  operator: 1
+  operator_name: MyString
+  change_date: 2019-03-19 01:24:05
+  type: 
+
+two:
+  scope: MyString
+  operator: 1
+  operator_name: MyString
+  change_date: 2019-03-19 01:24:05
+  type: 

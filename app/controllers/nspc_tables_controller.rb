@@ -1,0 +1,2 @@
+class NspcTablesController < ApplicationController
+end

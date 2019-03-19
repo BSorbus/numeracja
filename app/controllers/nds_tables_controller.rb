@@ -1,0 +1,2 @@
+class NdsTablesController < ApplicationController
+end

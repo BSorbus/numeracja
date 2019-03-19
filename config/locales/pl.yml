@@ -1,0 +1,490 @@
+pl:
+  logo_file: "logo_uke_pl_do_lewej.png"
+  logo_link: "http://www.uke.gov.pl"
+  layouts:
+    header:
+      menu:
+        data: 'Tablice numeracji'
+    footer:
+      brand: 'Urząd Komunikacji Elektronicznej'
+      brand_address_1: 'ul. Giełdowa 7/9'
+      brand_address_2: '01-211 Warszawa'
+      brand_note: 'Regulator rynku telekomunikacyjnego i pocztowego'
+      contact: 'Kontakt'
+      contact_mail: 'wml@uke.gov.pl'
+      contact_phone: '+48 22 53 49 125'
+      contact_fax: '+48 22 53 49 175'
+      links: 'Zobacz też'
+  static_pages:
+    home:
+      title: 'Tablice Zagospodarowania Numeracji'
+  individuals:
+    index:
+      title: 'Wykaz pozwoleń wydanych osobom fizycznym'
+      navbar: 'Osoby'
+    show:
+      title: 'Osoba'
+  clubs:
+    index:
+      title: 'Wykaz pozwoleń wydanych osobom prawnym'
+      navbar: 'Kluby'
+    show:
+      title: 'Klub'
+  individual_devices:
+    index:
+      title: 'Wykaz pozwoleń wydanych osobom fizycznym na urządzenia bezobsługowe'
+      navbar: 'Bezobsługowe - Osoby'
+    show:
+      title: 'Bezobsługowe - Osoba'
+  club_devices:
+    index:
+      title: 'Wykaz pozwoleń wydanych osobom prawnym na urządzenia bezobsługowe'
+      navbar: 'Bezobsługowe - Kluby'
+    show:
+      title: 'Bezobsługowe - Klub'
+  pstn_tables:
+    index:
+      title_primary: 'Stacjonarne publiczne sieci telefoniczne'
+      title: 'Tablica Zagospodarowania Numeracji abonenckiej dla stacjonarnej publicznej sieci telekomunikacyjnej PSTN'
+      navbar: 'TZN PSTN'
+    show:
+      title: 'TZN PLMN'
+  plmn_tables:
+    index:
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telefoniczne'
+      title: 'Tablica Zagospodarowania Numeracji abonenckiej dla ruchomej publicznej sieci telekomunikacyjnej PLMN'
+      navbar: 'TZN PLMN'
+    show:
+      title: 'TZN PLMN'
+  mnc_tables:
+    index:
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telefoniczne'
+      title: 'Tablica Zagospodarowania kodów sieci ruchomej MNC'
+      navbar: 'TZN MNC'
+    show:
+      title: 'TZN MNC'
+  plmn_mnc:
+    index:
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telefoniczne'
+      navbar: 'TZN PLMN, MNC'
+  ndsi_tables:
+    index:
+      title_primary: 'Sieci teleinformatyczne (Internet)'
+      title: 'Tablica Zagospodarowania Numeracji dostępu do sieci teleinformatycznych NDSI'
+      navbar: 'TZN NDSI'
+    show:
+      title: 'TZN NDSI'
+  aus_tables:
+    index:
+      title_primary: 'Numery abonenckich usług specjalnych'
+      title: 'Tablica Zagospodarowania Numeracji abonenckich usług specjalnych AUS (5D)'
+      navbar: 'TZN AUS'
+    show:
+      title: 'TZN AUS'
+  hesc_tables:
+    index:
+      title_primary: 'Numeracja abonenckich usług specjalnych oraz zharmonizowanych usług o walorze społecznym'
+      title: 'Tablice numeracji HESC z zakresu 116 i 118'
+      navbar: 'TZN HESC'
+    show:
+      title: 'TZN HESC'
+  in_tables:
+    index:
+      title_primary: 'Sieci inteligentne (70, 80)'
+      title: 'Tablica Zagospodarowania Numeracji dostępu do usług sieci inteligentnych IN'
+      navbar: 'TZN NDIN'
+    show:
+      title: 'TZN NDIN'
+  nds_tables:
+    index:
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title: 'Tablica Zagospodarowania Numeracji dostępu do sieci NDS'
+      navbar: 'TZN NDS'
+    show:
+      title: 'TZN NDS'
+  ispc_tables:
+    index:
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title: 'Tablica Zagospodarowania Numeracji Międzynarodowych Punktów Sygnalizacyjnych ISPC'
+      navbar: 'TZN ISPC'
+    show:
+      title: 'TZN ISPC'
+  nspc_tables:
+    index:
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title: 'Tablica Zagospodarowania Numeracji Krajowych Punktów Sygnalizacyjnych NSPC'
+      navbar: 'TZN NSPC'
+    show:
+      title: 'TZN NSPC'
+  nds_ispc_nspc:
+    index:
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      navbar: 'TZN NDS, ISPC, NSPC'
+  voip_tables:
+    index:
+      title_primary: 'Usługi wykorzystujące technologię IP'
+      title: 'Tablica Zagospodarowania Numeracji niegeograficznej (o wyróżniku sieci WST AB=39) dla świadczenia usług telefonii wykorzystującej pakietową transmisję danych w technologii IP (VoIP)'
+      navbar: 'TZN VOIP'
+    show:
+      title: 'TZN VOIP'
+  nrnp_tables:
+    index:
+      title_primary: 'Numery rutingowe'
+      title: 'Tablica Zagospodarowania numerów rutingowych NRNP'
+      navbar: 'TZN NRNP'
+    show:
+      title: 'TZN NRNP'
+  shared:
+    basic_info:
+      fieldset_title: 'Dane podstawowe'
+    additional_info:
+      fieldset_title: 'Informacje dodatkowe'
+    station_info:
+      fieldset_title: 'Stacja'
+    station_full_info:
+      fieldset_title: 'Stacja'
+    applicant_info:
+      fieldset_title: 'Wnioskodawca'
+    enduser_info:
+      fieldset_title: 'Użytkownik'
+  activerecord:
+    models:
+      individual: 'Osoba'
+      club: 'Klub'
+      individual_device: 'Bezobsługowe - Osoba'
+      club_device: 'Bezobsługowe - Klub'
+    attributes:
+      individual:
+        number: 'Numer'
+        date_of_issue: 'Data wydania'
+        valid_to: 'Ważne do'
+        call_sign: 'Znak'
+        category: 'Kategoria'
+        transmitter_power: 'Moc'
+        station_location: 'Stacja'
+      club:
+        number: 'Numer'
+        date_of_issue: 'Data wydania'
+        valid_to: 'Ważne do'
+        call_sign: 'Znak'
+        category: 'Kategoria'
+        transmitter_power: 'Moc'
+        enduser_name: 'Użytkownik - Nazwa'
+        enduser_name_short: 'Nazwa'
+        enduser_city: 'Użytkownik - Miejscowość'
+        enduser_city_short: 'Miejscowość'
+        enduser_street: 'Użytkownik - Ulica'
+        enduser_street_short: 'Ulica'
+        enduser_house: 'Użytkownik - Dom'
+        enduser_house_short: 'Dom'
+        enduser_number: 'Użytkownik - Lokal'
+        enduser_number_short: 'Lokal'
+        applicant: 'Wnioskodawca'
+        applicant_name: 'Wnioskodawca - Nazwa'
+        applicant_name_short: 'Nazwa'
+        applicant_city: 'Wnioskodawca - Miejscowość'
+        applicant_city_short: 'Miejscowość'
+        applicant_street: 'Wnioskodawca - Ulica'
+        applicant_street_short: 'Ulica'
+        applicant_house: 'Wnioskodawca - Dom'
+        applicant_house_short: 'Dom'
+        applicant_number: 'Wnioskodawca - Lokal'
+        applicant_number_short: 'Lokal'
+        station: 'Stacja'
+        station_city: 'Stacja - Miejscowość'
+        station_city_short: 'Miejscowość'
+        station_street: 'Stacja - Ulica'
+        station_street_short: 'Ulica'
+        station_house: 'Stacja - Dom'
+        station_house_short: 'Dom'
+        station_number: 'Stacja - Lokal'
+        station_number_short: 'Lokal'
+        lat: 'Stacja - latitude'
+        lng: 'Stacja - longitude'
+      individual_device:
+        number: 'Numer'
+        date_of_issue: 'Data wydania'
+        valid_to: 'Ważne do'
+        call_sign: 'Znak'
+        category: 'Kategoria'
+        transmitter_power: 'Moc'
+        name_type_station: 'Rodzaj stacji'
+        emission: 'Emisja'
+        input_frequency: 'Częstotliwość wej'
+        output_frequency: 'Częstotliwość wyj'
+        station_location: 'Stacja'
+      club_device:
+        number: 'Numer'
+        date_of_issue: 'Data wydania'
+        valid_to: 'Ważne do'
+        call_sign: 'Znak'
+        category: 'Kategoria'
+        transmitter_power: 'Moc'
+        name_type_station: 'Nazwa rodzaju stacji'
+        emission: 'Emisja'
+        input_frequency: 'Częstotliwość wej'
+        output_frequency: 'Częstotliwość wyj'
+        enduser_name: 'Użytkownik - Nazwa'
+        enduser_name_short: 'Nazwa'
+        enduser_city: 'Użytkownik - Miejscowość'
+        enduser_city_short: 'Miejscowość'
+        enduser_street: 'Użytkownik - Ulica'
+        enduser_street_short: 'Ulica'
+        enduser_house: 'Użytkownik - Dom'
+        enduser_house_short: 'Dom'
+        enduser_number: 'Użytkownik - Lokal'
+        enduser_number_short: 'Lokal'
+        applicant: 'Wnioskodawca'
+        applicant_name: 'Wnioskodawca - Nazwa'
+        applicant_name_short: 'Nazwa'
+        applicant_city: 'Wnioskodawca - Miejscowość'
+        applicant_city_short: 'Miejscowość'
+        applicant_street: 'Wnioskodawca - Ulica'
+        applicant_street_short: 'Ulica'
+        applicant_house: 'Wnioskodawca - Dom'
+        applicant_house_short: 'Dom'
+        applicant_number: 'Wnioskodawca - Lokal'
+        applicant_number_short: 'Lokal'
+        station: 'Stacja'
+        station_city: 'Stacja - Miejscowość'
+        station_city_short: 'Miejscowość'
+        station_street: 'Stacja - Ulica'
+        station_street_short: 'Ulica'
+        station_house: 'Stacja - Dom'
+        station_house_short: 'Dom'
+        station_number: 'Stacja - Lokal'
+        station_number_short: 'Lokal'
+        lat: 'Stacja - latitude'
+        lng: 'Stacja - longitude'
+  date:
+    abbr_day_names:
+    - nie
+    - pon
+    - wto
+    - śro
+    - czw
+    - pią
+    - sob
+    abbr_month_names:
+    -
+    - sty
+    - lut
+    - mar
+    - kwi
+    - maj
+    - cze
+    - lip
+    - sie
+    - wrz
+    - paź
+    - lis
+    - gru
+    day_names:
+    - niedziela
+    - poniedziałek
+    - wtorek
+    - środa
+    - czwartek
+    - piątek
+    - sobota
+    formats:
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%d %b"
+    month_names:
+    -
+    - styczeń
+    - luty
+    - marzec
+    - kwiecień
+    - maj
+    - czerwiec
+    - lipiec
+    - sierpień
+    - wrzesień
+    - październik
+    - listopad
+    - grudzień
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: około %{count} godziny
+        many: około %{count} godzin
+        one: około godziny
+        other: około %{count} godzin
+      about_x_months:
+        few: około %{count} miesiące
+        many: około %{count} miesięcy
+        one: około miesiąca
+        other: około %{count} miesięcy
+      about_x_years:
+        few: około %{count} lata
+        many: około %{count} lat
+        one: około rok
+        other: około %{count} lat
+      almost_x_years:
+        few: prawie %{count} lata
+        many: prawie %{count} lat
+        one: prawie rok
+        other: prawie %{count} lat
+      half_a_minute: pół minuty
+      less_than_x_minutes:
+        few: mniej niż %{count} minuty
+        many: mniej niż %{count} minut
+        one: mniej niż minutę
+        other: mniej niż %{count} minut
+      less_than_x_seconds:
+        few: mniej niż %{count} sekundy
+        many: mniej niż %{count} sekund
+        one: mniej niż sekundę
+        other: mniej niż %{count} sekund
+      over_x_years:
+        few: ponad %{count} lata
+        many: ponad %{count} lat
+        one: ponad rok
+        other: ponad %{count} lat
+      x_days:
+        few: "%{count} dni"
+        many: "%{count} dni"
+        one: 1 dzień
+        other: "%{count} dni"
+      x_minutes:
+        few: "%{count} minuty"
+        many: "%{count} minut"
+        one: 1 minuta
+        other: "%{count} minut"
+      x_months:
+        few: "%{count} miesiące"
+        many: "%{count} miesięcy"
+        one: 1 miesiąc
+        other: "%{count} miesięcy"
+      x_seconds:
+        few: "%{count} sekundy"
+        many: "%{count} sekund"
+        one: 1 sekunda
+        other: "%{count} sekund"
+    prompts:
+      day: Dzień
+      hour: Godzina
+      minute: Minuta
+      month: Miesiąc
+      second: Sekundy
+      year: Rok
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: musi zostać zaakceptowane
+      blank: nie może być puste
+      confirmation: nie zgadza się z polem %{attribute}
+      empty: nie może być puste
+      equal_to: musi być równe %{count}
+      even: musi być parzyste
+      exclusion: jest zarezerwowane
+      greater_than: musi być większe od %{count}
+      greater_than_or_equal_to: musi być większe lub równe %{count}
+      inclusion: nie znajduje się na liście dopuszczalnych wartości
+      invalid: jest nieprawidłowe
+      less_than: musi być mniejsze od %{count}
+      less_than_or_equal_to: musi być mniejsze lub równe %{count}
+      not_a_number: nie jest liczbą
+      not_an_integer: musi być liczbą całkowitą
+      odd: musi być nieparzyste
+      present: musi być puste
+      required: musi istnieć
+      taken: zostało już zajęte
+      too_long:
+        few: jest za długie (maksymalnie %{count} znaki)
+        many: jest za długie (maksymalnie %{count} znaków)
+        one: jest za długie (maksymalnie jeden znak)
+        other: jest za długie (maksymalnie %{count} znaków)
+      too_short:
+        few: jest za krótkie (przynajmniej %{count} znaki)
+        many: jest za krótkie (przynajmniej %{count} znaków)
+        one: jest za krótkie (przynajmniej jeden znak)
+        other: jest za krótkie (przynajmniej %{count} znaków)
+      wrong_length:
+        few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
+        many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+        one: ma nieprawidłową długość (powinna wynosić jeden znak)
+        other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+      other_than: musi być inna niż %{count}
+    template:
+      body: 'Błędy dotyczą następujących pól:'
+      header:
+        few: "%{model} nie został zachowany z powodu %{count} błędów"
+        many: "%{model} nie został zachowany z powodu %{count} błędów"
+        one: "%{model} nie został zachowany z powodu jednego błędu"
+        other: "%{model} nie został zachowany z powodu %{count} błędów"
+  helpers:
+    select:
+      prompt: Proszę wybrać
+    submit:
+      create: Utwórz %{model}
+      submit: Zapisz %{model}
+      update: Aktualizuj %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: true
+        unit: zł
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Miliard
+          million: Milion
+          quadrillion: Biliard
+          thousand: Tysiąc
+          trillion: Bilion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            few: bajty
+            many: bajtów
+            one: bajt
+            other: bajty
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " oraz "
+      two_words_connector: " i "
+      words_connector: ", "
+  time:
+    am: przed południem
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: po południu
