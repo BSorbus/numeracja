@@ -1,11 +1,6 @@
 require 'csv'
 
 class AusTable < ApplicationRecord
-  delegate :url_helpers, to: 'Rails.application.routes'
-
-  def number_as_link(loc)
-    "<a href=#{url_helpers.aus_table_path(self.id, locale: loc)}>#{self.number}</a>".html_safe
-  end
 
   def self.load_data_from_csv_file
     @buffer = []

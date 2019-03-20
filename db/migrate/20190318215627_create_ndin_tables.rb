@@ -1,6 +1,6 @@
-class CreateInTables < ActiveRecord::Migration[5.2]
+class CreateNdinTables < ActiveRecord::Migration[5.2]
   def change
-    create_table :in_tables do |t|
+    create_table :ndin_tables do |t|
       t.string :scope,              index: true
       t.string :operator_name,      index: true
       t.integer :operator,          index: true

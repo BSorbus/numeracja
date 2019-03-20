@@ -1,11 +1,6 @@
 require 'csv'
 
-class InTable < ApplicationRecord
-  delegate :url_helpers, to: 'Rails.application.routes'
-
-  def scope_as_link(loc)
-    "<a href=#{url_helpers.in_table_path(self.id, locale: loc)}>#{self.scope}</a>".html_safe
-  end
+class NdinTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
@@ -22,8 +17,8 @@ class InTable < ApplicationRecord
       insert_to_buffer(row)                        
     end 
     #AusTable.destroy_all
-    ActiveRecord::Base.connection.execute("TRUNCATE in_tables RESTART IDENTITY")
-    InTable.import columns, @buffer, validate: false    
+    ActiveRecord::Base.connection.execute("TRUNCATE ndin_tables RESTART IDENTITY")
+    NdinTable.import columns, @buffer, validate: false    
   end
 
   private

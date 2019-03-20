@@ -13,18 +13,18 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <table id="ndsi_tables-datatable" class="hover cell-border" cellspacing="0" width="100%", 
-        data-source="<%= ndsi_tables_path(format: :json) %>", 
+      <table id="ndin_tables-datatable" class="hover cell-border" cellspacing="0" width="100%", 
+        data-source="<%= ndin_tables_path(format: :json) %>", 
         data-locale_url="<%= datatables_lang_path(format: :json) %>", 
-        data-export_csv_url="<%= export_ndsi_tables_path(format: :csv) %>">
+        data-export_csv_url="<%= export_ndin_tables_path(format: :csv) %>">
         <thead>
           <tr>
             <th>id</th>
-            <th><%= NdsiTable.human_attribute_name(:number) %></th>
-            <th><%= NdsiTable.human_attribute_name(:operator) %></th>
-            <th><%= NdsiTable.human_attribute_name(:operator_name) %></th>
-            <th><%= NdsiTable.human_attribute_name(:number_type) %></th>
-            <th><%= NdsiTable.human_attribute_name(:change_date) %></th>
+            <th><%= NdinTable.human_attribute_name(:scope) %></th>
+            <th><%= NdinTable.human_attribute_name(:operator) %></th>
+            <th><%= NdinTable.human_attribute_name(:operator_name) %></th>
+            <th><%= NdinTable.human_attribute_name(:service_type_name) %></th>
+            <th><%= NdinTable.human_attribute_name(:change_date) %></th>
           </tr>
         </thead>
 

@@ -23,7 +23,7 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone_symbol:          record.zone_symbol,
         operator:             record.operator,
         operator_name:        record.operator_name,
-        change_date:          record.change_date
+        change_date:          record.change_date.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

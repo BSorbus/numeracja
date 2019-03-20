@@ -86,7 +86,7 @@ en:
       navbar: 'TZN HESC'
     show:
       title: 'TZN HESC'
-  in_tables:
+  ndin_tables:
     index:
       title_primary: 'Sieci inteligentne (70, 80)'
       title: 'Tablica Zagospodarowania Numeracji dostępu do usług sieci inteligentnych IN'

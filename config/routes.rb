@@ -2,18 +2,42 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /en|pl/ do
 
-    resources :aus_tables, only: [:index, :show]
-    resources :hesc_tables, only: [:index, :show]
-    resources :in_tables, only: [:index, :show]
-    resources :ispc_tables, only: [:index, :show]
-    resources :mnc_tables, only: [:index, :show]
-    resources :nds_tables, only: [:index, :show]
-    resources :ndsi_tables, only: [:index, :show]
-    resources :nrnp_tables, only: [:index, :show]
-    resources :nspc_tables, only: [:index, :show]
-    resources :plmn_tables, only: [:index, :show]
-    resources :pstn_tables, only: [:index, :show]
-    resources :voip_tables, only: [:index, :show]
+    resources :aus_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :hesc_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :ndin_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :ispc_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :mnc_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :nds_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :ndsi_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :nrnp_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :nspc_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :plmn_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :pstn_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
+    resources :voip_tables, only: [:index, :show] do
+      get 'export', on: :collection
+    end
 
 
     resources :individuals, only: [:index, :show] do

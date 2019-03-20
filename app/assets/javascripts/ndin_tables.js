@@ -1,19 +1,19 @@
 //document.addEventListener('turbolinks:load', function() {
 $(document).ready(function() {
 
-  $.fn.dataTable.ext.buttons.mnc_tables_export_csv = {
+  $.fn.dataTable.ext.buttons.ndin_tables_export_csv = {
     text: '<span class="fa fa-download"></span>',
     titleAttr: 'Export',
     className: 'btn btn-default',
     action: function ( e, dt, button, config ) {
-      window.location = $('#mnc_tables-datatable').data('export_csv_url');
+      window.location = $('#ndin_tables-datatable').data('export_csv_url');
     }  
   };
 
-  var oClubsTable = $('#mnc_tables-datatable').DataTable({
+  var oClubsTable = $('#ndin_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
-      'mnc_tables_export_csv', 
+      'ndin_tables_export_csv', 
       {
         extend:    'colvis',
         text:      '<span class="fa fa-columns"></span>',
@@ -27,10 +27,10 @@ $(document).ready(function() {
     deferRender: true,
     searchDelay: 500,
     ajax: { 
-      url: $('#mnc_tables-datatable').data('source'),
+      url: $('#ndin_tables-datatable').data('source'),
       type: "GET",
       data: function(d){
-        //d.eager_filter_for_current_user = $('#mnc_tables-datatable').DataTable().button(3).active();
+        //d.eager_filter_for_current_user = $('#ndin_tables-datatable').DataTable().button(3).active();
       },
       error: function (jqXHR, exception) {
         console.log(jqXHR);
@@ -46,16 +46,16 @@ $(document).ready(function() {
     columns: [
       { "data": "id",
         "visible": false }, 
-      { "data": "number" }, 
+      { "data": "scope" }, 
       { "data": "operator" },
       { "data": "operator_name" },
-      { "data": "network" },
+      { "data": "service_type_name" },
       { "data": "change_date" }
     ],
     order: [[ 1, "asc" ]],
     language: {
-      //url: $('#mnc_tables-datatable').data('locale') "<%= Rails.application.routes.url_helpers.datatables_lang_path(locale: I18n.locale, format: :json) %>"
-      url: $('#mnc_tables-datatable').data('locale_url')
+      //url: $('#ndin_tables-datatable').data('locale') "<%= Rails.application.routes.url_helpers.datatables_lang_path(locale: I18n.locale, format: :json) %>"
+      url: $('#ndin_tables-datatable').data('locale_url')
     }
   });
  

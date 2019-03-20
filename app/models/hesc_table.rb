@@ -1,15 +1,10 @@
 require 'csv'
 
 class HescTable < ApplicationRecord
-  delegate :url_helpers, to: 'Rails.application.routes'
-
-  def number_as_link(loc)
-    "<a href=#{url_helpers.hesc_table_path(self.id, locale: loc)}>#{self.number}</a>".html_safe
-  end
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :number, :operator, :change_date, :service_description, :entity_providing_services ]
+    columns = [ :number, :operator, :operator_name, :change_date, :service_description, :entity_providing_services ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/HESC.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 
@@ -34,7 +29,8 @@ class HescTable < ApplicationRecord
         "#{current_row[1]}", 
         "#{current_row[2]}",
         "#{current_row[3]}",
-        "#{current_row[4]}"
+        "#{current_row[4]}".to_s.gsub("\u0000", ''),
+        "#{current_row[5]}".to_s.gsub("\u0000", '')
       ]
     end
 

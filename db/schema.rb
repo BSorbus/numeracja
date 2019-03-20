@@ -141,27 +141,10 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   create_table "hesc_tables", force: :cascade do |t|
     t.integer "number"
     t.integer "operator"
+    t.string "operator_name"
     t.datetime "change_date"
     t.string "service_description"
     t.string "entity_providing_services"
-    t.index ["change_date"], name: "index_hesc_tables_on_change_date"
-    t.index ["entity_providing_services"], name: "index_hesc_tables_on_entity_providing_services"
-    t.index ["number"], name: "index_hesc_tables_on_number"
-    t.index ["operator"], name: "index_hesc_tables_on_operator"
-    t.index ["service_description"], name: "index_hesc_tables_on_service_description"
-  end
-
-  create_table "in_tables", force: :cascade do |t|
-    t.string "scope"
-    t.string "operator_name"
-    t.integer "operator"
-    t.string "service_type_name"
-    t.datetime "change_date"
-    t.index ["change_date"], name: "index_in_tables_on_change_date"
-    t.index ["operator"], name: "index_in_tables_on_operator"
-    t.index ["operator_name"], name: "index_in_tables_on_operator_name"
-    t.index ["scope"], name: "index_in_tables_on_scope"
-    t.index ["service_type_name"], name: "index_in_tables_on_service_type_name"
   end
 
   create_table "individual_devices", force: :cascade do |t|
@@ -234,6 +217,19 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.index ["number"], name: "index_mnc_tables_on_number"
     t.index ["operator"], name: "index_mnc_tables_on_operator"
     t.index ["operator_name"], name: "index_mnc_tables_on_operator_name"
+  end
+
+  create_table "ndin_tables", force: :cascade do |t|
+    t.string "scope"
+    t.string "operator_name"
+    t.integer "operator"
+    t.string "service_type_name"
+    t.datetime "change_date"
+    t.index ["change_date"], name: "index_ndin_tables_on_change_date"
+    t.index ["operator"], name: "index_ndin_tables_on_operator"
+    t.index ["operator_name"], name: "index_ndin_tables_on_operator_name"
+    t.index ["scope"], name: "index_ndin_tables_on_scope"
+    t.index ["service_type_name"], name: "index_ndin_tables_on_service_type_name"
   end
 
   create_table "nds_tables", force: :cascade do |t|
@@ -327,8 +323,6 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.string "operator_name"
     t.integer "operator"
     t.datetime "change_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

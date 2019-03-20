@@ -1,7 +1,6 @@
 require 'csv'
 
 class MncTable < ApplicationRecord
-  delegate :url_helpers, to: 'Rails.application.routes'
 
   def self.load_data_from_csv_file
     @buffer = []

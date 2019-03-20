@@ -1,11 +1,11 @@
-class PstnTablesController < ApplicationController
+class NdinTablesController < ApplicationController
 
   # GET /aus_tables
   # GET /aus_tables.json
   def index
     respond_to do |format|
       format.html
-      format.json { render json: PstnTableDatatable.new(params) }
+      format.json { render json: NdinTableDatatable.new(params) }
     end
   end
 

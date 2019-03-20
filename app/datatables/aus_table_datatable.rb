@@ -23,7 +23,7 @@ class AusTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone:               record.zone,
         zone_name:          record.zone_name,
         zone_symbol:        record.zone_symbol,
-        change_date:        record.change_date
+        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

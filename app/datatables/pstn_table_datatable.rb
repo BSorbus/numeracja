@@ -25,7 +25,7 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone_name:      record.zone_name,
         zone_symbol:    record.zone_symbol,
         numbering_area: record.numbering_area,
-        change_date:    record.change_date
+        change_date:    record.change_date.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

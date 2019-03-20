@@ -4,7 +4,7 @@ puts " "
 
 AusTable.load_data_from_csv_file
 HescTable.load_data_from_csv_file
-InTable.load_data_from_csv_file
+NdinTable.load_data_from_csv_file
 IspcTable.load_data_from_csv_file
 MncTable.load_data_from_csv_file
 NdsTable.load_data_from_csv_file
