@@ -5,7 +5,7 @@ class CreatePlmnTables < ActiveRecord::Migration[5.2]
       t.integer :operator,      index: true
       t.string :operator_name,  index: true
       t.datetime :change_date,  index: true
-      t.string :type,           index: true
+      t.string :scope_type,     index: true
 
       #t.timestamps
     end

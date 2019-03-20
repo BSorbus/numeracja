@@ -291,12 +291,12 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.integer "operator"
     t.string "operator_name"
     t.datetime "change_date"
-    t.string "type"
+    t.string "scope_type"
     t.index ["change_date"], name: "index_plmn_tables_on_change_date"
     t.index ["operator"], name: "index_plmn_tables_on_operator"
     t.index ["operator_name"], name: "index_plmn_tables_on_operator_name"
     t.index ["scope"], name: "index_plmn_tables_on_scope"
-    t.index ["type"], name: "index_plmn_tables_on_type"
+    t.index ["scope_type"], name: "index_plmn_tables_on_scope_type"
   end
 
   create_table "pstn_tables", force: :cascade do |t|

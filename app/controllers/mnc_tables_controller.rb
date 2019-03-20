@@ -10,10 +10,9 @@ class MncTablesController < ApplicationController
   end
 
   def export
-    # @data = Club.all
-    # respond_to do |format|
-    #   format.csv { send_data @data.to_csv, filename: "clubs_#{Time.zone.today.strftime("%Y-%m-%d")}.csv" }
-    # end
+    send_file "#{Rails.application.secrets.csv_files_path}/MNC.csv", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=MNC.csv"
   end
 
 end

@@ -11,6 +11,31 @@
 </div> <!--/container -->
 
 <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <table id="nrnp_tables-datatable" class="hover cell-border" cellspacing="0" width="100%", 
+        data-source="<%= nrnp_tables_path(format: :json) %>", 
+        data-locale_url="<%= datatables_lang_path(format: :json) %>", 
+        data-export_csv_url="<%= export_nrnp_tables_path(format: :csv) %>">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th><%= NrnpTable.human_attribute_name(:routing_number) %></th>
+            <th><%= NrnpTable.human_attribute_name(:routing_number_type) %></th>
+            <th><%= NrnpTable.human_attribute_name(:zone) %></th>
+            <th><%= NrnpTable.human_attribute_name(:zone_symbol) %></th>
+            <th><%= NrnpTable.human_attribute_name(:operator) %></th>
+            <th><%= NrnpTable.human_attribute_name(:operator_name) %></th>
+            <th><%= NrnpTable.human_attribute_name(:change_date) %></th>
+          </tr>
+        </thead>
+
+        <tbody>
+           <!--data from JSON -->
+        </tbody>
+      </table>
+    </div> <!--/col-sm-12 -->
+  </div> <!--/row -->
 
 </div> <!--/container -->
 
