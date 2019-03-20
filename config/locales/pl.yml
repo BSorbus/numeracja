@@ -11,9 +11,9 @@ pl:
       brand_address_2: '01-211 Warszawa'
       brand_note: 'Regulator rynku telekomunikacyjnego i pocztowego'
       contact: 'Kontakt'
-      contact_mail: 'wml@uke.gov.pl'
-      contact_phone: '+48 22 53 49 125'
-      contact_fax: '+48 22 53 49 175'
+      contact_mail: 'numeracja@uke.gov.pl'
+      contact_phone: '+48 22 53 49 320'
+      contact_fax: '+48 22 53 49 327'
       links: 'Zobacz też'
   static_pages:
     home:
