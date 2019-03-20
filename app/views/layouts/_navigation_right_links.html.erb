@@ -1,3 +1,24 @@
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-list"></span>&nbsp;<%=t "layouts.header.menu.data" %> <span class="caret"></span></a>
+
+  <ul class="dropdown-menu">
+
+    <li><%= link_to t("pstn_tables.index.navbar"), pstn_tables_path %></li>
+    <li><%= link_to t("plmn_tables.index.navbar"), plmn_tables_path %></li>
+    <li><%= link_to t("mnc_tables.index.navbar"), mnc_tables_path %></li>
+    <li><%= link_to t("ndsi_tables.index.navbar"), ndsi_tables_path %></li>
+    <li><%= link_to t("aus_tables.index.navbar"), aus_tables_path %></li>
+    <li><%= link_to t("hesc_tables.index.navbar"), hesc_tables_path %></li>
+    <li><%= link_to t("in_tables.index.navbar"), in_tables_path %></li>
+    <li><%= link_to t("nds_tables.index.navbar"), nds_tables_path %></li>
+    <li><%= link_to t("ispc_tables.index.navbar"), ispc_tables_path %></li>
+    <li><%= link_to t("nspc_tables.index.navbar"), nspc_tables_path %></li>
+    <li><%= link_to t("voip_tables.index.navbar"), voip_tables_path %></li>
+    <li><%= link_to t("nrnp_tables.index.navbar"), nrnp_tables_path %></li>
+
+  </ul>
+</li>
+
 <% unless "#{locale}" == "en" %>
   <li>
     <%= link_to image_tag('en.png', alt: 'EN', class: "img img-thumbnail", width: 28), { locale: :en } %>
