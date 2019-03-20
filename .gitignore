@@ -34,5 +34,5 @@
 /config/secrets.yml
 /config/deploy.rb
 
-/db/seeds/files/*.csv
-/db/seeds/files/log/*
+/db/seeds/*.csv
+/db/seeds/*.log
