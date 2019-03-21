@@ -7,7 +7,7 @@ class NspcTableDatatable < AjaxDatatablesRails::ActiveRecord
       number:             { source: "NspcTable.number", cond: :like, searchable: true, orderable: true },
       operator:           { source: "NspcTable.operator" },
       operator_name:      { source: "NspcTable.operator_name" },
-      change_date:        { source: "NspcTable.change_date" }
+      modification:       { source: "NspcTable.modification" }
     }
   end
 
@@ -19,7 +19,7 @@ class NspcTableDatatable < AjaxDatatablesRails::ActiveRecord
         number:             record.number,
         operator:           record.operator,
         operator_name:      record.operator_name,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

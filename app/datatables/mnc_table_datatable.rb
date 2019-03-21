@@ -7,7 +7,7 @@ class MncTableDatatable < AjaxDatatablesRails::ActiveRecord
       operator:           { source: "MncTable.operator" },
       operator_name:      { source: "MncTable.operator_name" },
       network:            { source: "MncTable.network" },
-      change_date:        { source: "MncTable.change_date" }
+      modification:       { source: "MncTable.modification" }
     }
   end
 
@@ -19,7 +19,7 @@ class MncTableDatatable < AjaxDatatablesRails::ActiveRecord
         operator:           record.operator,
         operator_name:      record.operator_name,
         network:            record.network,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

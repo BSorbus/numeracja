@@ -6,7 +6,7 @@ class NdsTableDatatable < AjaxDatatablesRails::ActiveRecord
       number:             { source: "NdsTable.number", cond: :like, searchable: true, orderable: true },
       operator:           { source: "NdsTable.operator" },
       operator_name:      { source: "NdsTable.operator_name" },
-      change_date:        { source: "NdsTable.change_date" }
+      modification:       { source: "NdsTable.modification" }
     }
   end
 
@@ -17,7 +17,7 @@ class NdsTableDatatable < AjaxDatatablesRails::ActiveRecord
         number:             record.number,
         operator:           record.operator,
         operator_name:      record.operator_name,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

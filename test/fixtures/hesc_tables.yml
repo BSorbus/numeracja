@@ -3,13 +3,13 @@
 one:
   number: 1
   operator: 1
-  change_date: 2019-03-18 22:32:40
+  modification: 2019-03-18 22:32:40
   service_description: MyString
   entity_providing_services: MyString
 
 two:
   number: 1
   operator: 1
-  change_date: 2019-03-18 22:32:40
+  modification: 2019-03-18 22:32:40
   service_description: MyString
   entity_providing_services: MyString

@@ -10,7 +10,7 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
       zone_name:      { source: "PstnTable.zone_name" },
       zone_symbol:    { source: "PstnTable.zone_symbol" },
       numbering_area: { source: "PstnTable.numbering_area" },
-      change_date:    { source: "PstnTable.change_date" }
+      modification:   { source: "PstnTable.modification" }
     }
   end
 
@@ -25,7 +25,7 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone_name:      record.zone_name,
         zone_symbol:    record.zone_symbol,
         numbering_area: record.numbering_area,
-        change_date:    record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:   record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

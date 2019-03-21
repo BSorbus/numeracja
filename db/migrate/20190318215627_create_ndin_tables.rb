@@ -5,7 +5,7 @@ class CreateNdinTables < ActiveRecord::Migration[5.2]
       t.string :operator_name,      index: true
       t.integer :operator,          index: true
       t.string :service_type_name,  index: true
-      t.datetime :change_date,      index: true
+      t.datetime :modification,      index: true
 
       #t.timestamps
     end

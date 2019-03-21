@@ -5,7 +5,7 @@ class CreateMncTables < ActiveRecord::Migration[5.2]
       t.integer :operator,      index: true
       t.string :operator_name,  index: true
       t.string :network,        index: true
-      t.datetime :change_date,  index: true
+      t.datetime :modification,  index: true
 
       #t.timestamps
     end

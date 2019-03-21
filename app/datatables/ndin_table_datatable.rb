@@ -7,7 +7,7 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
       operator:           { source: "NdinTable.operator" },
       operator_name:      { source: "NdinTable.operator_name" },
       service_type_name:  { source: "NdinTable.service_type_name" },
-      change_date:        { source: "NdinTable.change_date" }
+      modification:       { source: "NdinTable.modification" }
     }
   end
 
@@ -19,7 +19,7 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
         operator:           record.operator,
         operator_name:      record.operator_name,
         service_type_name:  record.service_type_name,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

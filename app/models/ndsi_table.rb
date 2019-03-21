@@ -4,7 +4,7 @@ class NdsiTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :number, :operator, :operator_name, :number_type, :change_date ]
+    columns = [ :number, :operator, :operator_name, :number_type, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/NDSI.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

@@ -7,7 +7,7 @@ class NdsiTableDatatable < AjaxDatatablesRails::ActiveRecord
       operator:           { source: "NdsiTable.operator" },
       operator_name:      { source: "NdsiTable.operator_name" },
       number_type:        { source: "NdsiTable.number_type" },
-      change_date:        { source: "NdsiTable.change_date" }
+      modification:       { source: "NdsiTable.modification" }
     }
   end
 
@@ -19,7 +19,7 @@ class NdsiTableDatatable < AjaxDatatablesRails::ActiveRecord
         operator:           record.operator,
         operator_name:      record.operator_name,
         number_type:        record.number_type,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

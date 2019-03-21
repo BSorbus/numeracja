@@ -5,7 +5,7 @@ class CreateNdsiTables < ActiveRecord::Migration[5.2]
       t.integer :operator,      index: true
       t.string :operator_name,  index: true
       t.integer :number_type,   index: true
-      t.datetime :change_date,  index: true
+      t.datetime :modification,  index: true
 
       #t.timestamps
     end

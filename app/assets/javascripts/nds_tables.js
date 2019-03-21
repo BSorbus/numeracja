@@ -49,7 +49,7 @@ $(document).ready(function() {
       { "data": "number" }, 
       { "data": "operator" },
       { "data": "operator_name" },
-      { "data": "change_date" }
+      { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {

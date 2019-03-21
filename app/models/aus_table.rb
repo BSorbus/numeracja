@@ -4,7 +4,7 @@ class AusTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :number, :operator, :operator_name, :zone, :zone_name, :zone_symbol, :change_date ]
+    columns = [ :number, :operator, :operator_name, :zone, :zone_name, :zone_symbol, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/AUS.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

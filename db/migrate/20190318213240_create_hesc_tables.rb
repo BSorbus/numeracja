@@ -4,7 +4,7 @@ class CreateHescTables < ActiveRecord::Migration[5.2]
       t.integer :number
       t.integer :operator
       t.string :operator_name
-      t.datetime :change_date
+      t.datetime :modification
       t.string :service_description
       t.string :entity_providing_services
 

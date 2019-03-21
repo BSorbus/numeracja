@@ -4,7 +4,7 @@ class CreateVoipTables < ActiveRecord::Migration[5.2]
       t.string :scope
       t.string :operator_name
       t.integer :operator
-      t.datetime :change_date
+      t.datetime :modification
 
       #t.timestamps
     end

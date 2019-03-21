@@ -7,7 +7,7 @@ class IspcTableDatatable < AjaxDatatablesRails::ActiveRecord
       operator:           { source: "IspcTable.operator" },
       operator_name:      { source: "IspcTable.operator_name" },
       location:           { source: "IspcTable.location" },
-      change_date:        { source: "IspcTable.change_date" }
+      modification:       { source: "IspcTable.modification" }
     }
   end
 
@@ -19,7 +19,7 @@ class IspcTableDatatable < AjaxDatatablesRails::ActiveRecord
         operator:           record.operator,
         operator_name:      record.operator_name,
         location:           record.location,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

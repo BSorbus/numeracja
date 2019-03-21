@@ -40,21 +40,11 @@ Rails.application.routes.draw do
     end
 
 
-    resources :individuals, only: [:index, :show] do
-      get 'export', on: :collection
-    end
 
     resources :clubs, only: [:index, :show] do
       get 'export', on: :collection
     end
 
-    resources :individual_devices, only: [:index, :show] do
-      get 'export', on: :collection
-    end
-
-    resources :club_devices, only: [:index, :show] do
-      get 'export', on: :collection
-    end
 
     get 'datatables/lang'
 

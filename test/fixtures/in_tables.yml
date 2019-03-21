@@ -5,11 +5,11 @@ one:
   operator_name: MyString
   operator: 1
   service_type_name: MyString
-  change_date: 2019-03-18 22:56:27
+  modification: 2019-03-18 22:56:27
 
 two:
   scope: MyString
   operator_name: MyString
   operator: 1
   service_type_name: MyString
-  change_date: 2019-03-18 22:56:27
+  modification: 2019-03-18 22:56:27

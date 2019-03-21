@@ -4,7 +4,7 @@ class NdsTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :number, :operator, :operator_name, :change_date ]
+    columns = [ :number, :operator, :operator_name, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/NDS.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

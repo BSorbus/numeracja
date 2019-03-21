@@ -4,7 +4,7 @@ class NspcTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :zone, :number, :operator, :operator_name, :change_date ]
+    columns = [ :zone, :number, :operator, :operator_name, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/NSPC.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

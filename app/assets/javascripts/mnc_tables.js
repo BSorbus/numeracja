@@ -50,7 +50,7 @@ $(document).ready(function() {
       { "data": "operator" },
       { "data": "operator_name" },
       { "data": "network" },
-      { "data": "change_date" }
+      { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {

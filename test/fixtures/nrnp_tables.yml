@@ -7,7 +7,7 @@ one:
   zone_symbol: MyString
   operator: 1
   operator_name: MyString
-  change_date: 2019-03-19 00:56:49
+  modification: 2019-03-19 00:56:49
 
 two:
   routing_number: MyString
@@ -16,4 +16,4 @@ two:
   zone_symbol: MyString
   operator: 1
   operator_name: MyString
-  change_date: 2019-03-19 00:56:49
+  modification: 2019-03-19 00:56:49

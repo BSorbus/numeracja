@@ -53,7 +53,7 @@ $(document).ready(function() {
       { "data": "zone_name" }, 
       { "data": "zone_symbol" }, 
       { "data": "numbering_area" }, 
-      { "data": "change_date" }
+      { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {

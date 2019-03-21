@@ -18,30 +18,12 @@ pl:
   static_pages:
     home:
       title: 'Tablice Zagospodarowania Numeracji'
-  individuals:
-    index:
-      title: 'Wykaz pozwoleń wydanych osobom fizycznym'
-      navbar: 'Osoby'
-    show:
-      title: 'Osoba'
   clubs:
     index:
       title: 'Wykaz pozwoleń wydanych osobom prawnym'
       navbar: 'Kluby'
     show:
       title: 'Klub'
-  individual_devices:
-    index:
-      title: 'Wykaz pozwoleń wydanych osobom fizycznym na urządzenia bezobsługowe'
-      navbar: 'Bezobsługowe - Osoby'
-    show:
-      title: 'Bezobsługowe - Osoba'
-  club_devices:
-    index:
-      title: 'Wykaz pozwoleń wydanych osobom prawnym na urządzenia bezobsługowe'
-      navbar: 'Bezobsługowe - Kluby'
-    show:
-      title: 'Bezobsługowe - Klub'
   pstn_tables:
     index:
       title_primary: 'Stacjonarne publiczne sieci telefoniczne'
@@ -149,19 +131,8 @@ pl:
       fieldset_title: 'Użytkownik'
   activerecord:
     models:
-      individual: 'Osoba'
       club: 'Klub'
-      individual_device: 'Bezobsługowe - Osoba'
-      club_device: 'Bezobsługowe - Klub'
     attributes:
-      individual:
-        number: 'Numer'
-        date_of_issue: 'Data wydania'
-        valid_to: 'Ważne do'
-        call_sign: 'Znak'
-        category: 'Kategoria'
-        transmitter_power: 'Moc'
-        station_location: 'Stacja'
       club:
         number: 'Numer'
         date_of_issue: 'Data wydania'
@@ -201,61 +172,16 @@ pl:
         station_number_short: 'Lokal'
         lat: 'Stacja - latitude'
         lng: 'Stacja - longitude'
-      individual_device:
+      club:
         number: 'Numer'
-        date_of_issue: 'Data wydania'
-        valid_to: 'Ważne do'
-        call_sign: 'Znak'
-        category: 'Kategoria'
-        transmitter_power: 'Moc'
-        name_type_station: 'Rodzaj stacji'
-        emission: 'Emisja'
-        input_frequency: 'Częstotliwość wej'
-        output_frequency: 'Częstotliwość wyj'
-        station_location: 'Stacja'
-      club_device:
+      aus_table:
         number: 'Numer'
-        date_of_issue: 'Data wydania'
-        valid_to: 'Ważne do'
-        call_sign: 'Znak'
-        category: 'Kategoria'
-        transmitter_power: 'Moc'
-        name_type_station: 'Nazwa rodzaju stacji'
-        emission: 'Emisja'
-        input_frequency: 'Częstotliwość wej'
-        output_frequency: 'Częstotliwość wyj'
-        enduser_name: 'Użytkownik - Nazwa'
-        enduser_name_short: 'Nazwa'
-        enduser_city: 'Użytkownik - Miejscowość'
-        enduser_city_short: 'Miejscowość'
-        enduser_street: 'Użytkownik - Ulica'
-        enduser_street_short: 'Ulica'
-        enduser_house: 'Użytkownik - Dom'
-        enduser_house_short: 'Dom'
-        enduser_number: 'Użytkownik - Lokal'
-        enduser_number_short: 'Lokal'
-        applicant: 'Wnioskodawca'
-        applicant_name: 'Wnioskodawca - Nazwa'
-        applicant_name_short: 'Nazwa'
-        applicant_city: 'Wnioskodawca - Miejscowość'
-        applicant_city_short: 'Miejscowość'
-        applicant_street: 'Wnioskodawca - Ulica'
-        applicant_street_short: 'Ulica'
-        applicant_house: 'Wnioskodawca - Dom'
-        applicant_house_short: 'Dom'
-        applicant_number: 'Wnioskodawca - Lokal'
-        applicant_number_short: 'Lokal'
-        station: 'Stacja'
-        station_city: 'Stacja - Miejscowość'
-        station_city_short: 'Miejscowość'
-        station_street: 'Stacja - Ulica'
-        station_street_short: 'Ulica'
-        station_house: 'Stacja - Dom'
-        station_house_short: 'Dom'
-        station_number: 'Stacja - Lokal'
-        station_number_short: 'Lokal'
-        lat: 'Stacja - latitude'
-        lng: 'Stacja - longitude'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        zone: 'Strefa (AB)'
+        zone_name: 'Strefa (nazwa)'
+        zone_symbol: 'Strefa (symbol)'
+        modification: 'Data modyfikacji'
   date:
     abbr_day_names:
     - nie

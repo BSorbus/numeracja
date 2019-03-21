@@ -7,7 +7,7 @@ class CreateAusTables < ActiveRecord::Migration[5.2]
       t.integer :zone,          index: true
       t.string  :zone_name,     index: true
       t.string  :zone_symbol,   index: true
-      t.datetime :change_date,  index: true
+      t.datetime :modification,  index: true
 
       #t.timestamps
     end

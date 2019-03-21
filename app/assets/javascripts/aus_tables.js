@@ -52,7 +52,7 @@ $(document).ready(function() {
       { "data": "zone" },
       { "data": "zone_name" },
       { "data": "zone_symbol" },
-      { "data": "change_date" }
+      { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {

@@ -50,7 +50,7 @@ $(document).ready(function() {
       { "data": "operator" },
       { "data": "operator_name" },
       { "data": "service_type_name" },
-      { "data": "change_date" }
+      { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {

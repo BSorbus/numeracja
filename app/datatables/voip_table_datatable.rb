@@ -6,7 +6,7 @@ class VoipTableDatatable < AjaxDatatablesRails::ActiveRecord
       scope:          { source: "VoipTable.scope", cond: :like, searchable: true, orderable: true },
       operator:       { source: "VoipTable.operator" },
       operator_name:  { source: "VoipTable.operator_name" },
-      change_date:    { source: "VoipTable.change_date" }
+      modification:   { source: "VoipTable.modification" }
     }
   end
 
@@ -17,7 +17,7 @@ class VoipTableDatatable < AjaxDatatablesRails::ActiveRecord
         scope:          record.scope,
         operator:       record.operator,
         operator_name:  record.operator_name,
-        change_date:    record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:   record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

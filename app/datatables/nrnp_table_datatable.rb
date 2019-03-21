@@ -9,7 +9,7 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
       zone_symbol:          { source: "NrnpTable.zone_symbol" },
       operator:             { source: "NrnpTable.operator" },
       operator_name:        { source: "NrnpTable.operator_name" },
-      change_date:          { source: "NrnpTable.change_date" }
+      modification:         { source: "NrnpTable.modification" }
     }
   end
 
@@ -23,7 +23,7 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone_symbol:          record.zone_symbol,
         operator:             record.operator,
         operator_name:        record.operator_name,
-        change_date:          record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:         record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

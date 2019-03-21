@@ -7,7 +7,7 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
       operator:           { source: "PlmnTable.operator" },
       operator_name:      { source: "PlmnTable.operator_name" },
       scope_type:         { source: "PlmnTable.scope_type" },
-      change_date:        { source: "PlmnTable.change_date" }
+      modification:       { source: "PlmnTable.modification" }
     }
   end
 
@@ -19,7 +19,7 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
         operator:           record.operator,
         operator_name:      record.operator_name,
         scope_type:         record.scope_type,
-        change_date:        record.change_date.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

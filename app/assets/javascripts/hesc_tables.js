@@ -49,7 +49,7 @@ $(document).ready(function() {
       { "data": "number" }, 
       { "data": "operator" },
       { "data": "operator_name" },
-      { "data": "change_date" },
+      { "data": "modification" },
       { "data": "service_description" },
       { "data": "entity_providing_services" }
     ],

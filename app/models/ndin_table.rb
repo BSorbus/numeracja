@@ -4,7 +4,7 @@ class NdinTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :scope, :operator_name, :operator, :service_type_name, :change_date ]
+    columns = [ :scope, :operator_name, :operator, :service_type_name, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/IN.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 
