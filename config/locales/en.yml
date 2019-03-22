@@ -214,7 +214,40 @@ en:
         operator_name: 'Operator (name)'
         number_type: 'Number type'
         modification: 'Modification date'
-
+      nrnp_table:
+        routing_number: 'Routing number'
+        routing_number_type: 'Routing number type'
+        zone: 'Zone (AB)'
+        zone_symbol: 'Zone (symbol)'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        modification: 'Modification date'
+      nspc_table:
+        zone: 'Zone (AB)'
+        number: 'Number'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        modification: 'Modification date'
+      plmn_table:
+        scope: 'Scope (number)'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        modification: 'Modification date'
+        scope_type: 'Type'
+      pstn_table:
+        zone: 'Zone (AB)'
+        scope: 'Scope (number)'
+        operator_name: 'Operator (name)'
+        operator: 'Operator (ID)'
+        zone_name: 'Zone (name)'
+        zone_symbol: 'Zone (symbol)'
+        numbering_area: 'Numbering area'
+        modification: 'Modification date'
+      voip_table:
+        scope: 'Scope (number)'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        modification: 'Modification date'
   date:
     abbr_day_names:
     - Sun

@@ -218,6 +218,40 @@ pl:
         operator_name: 'Operator (nazwa)'
         number_type: 'Typ numeru'
         modification: 'Data modyfikacji'
+      nrnp_table:
+        routing_number: 'Numer routingowy'
+        routing_number_type: 'Typ numeru routingowego'
+        zone: 'Strefa (AB)'
+        zone_symbol: 'Strefa (symbol)'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
+      nspc_table:
+        zone: 'Strefa (AB)'
+        number: 'Numer'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
+      plmn_table:
+        scope: 'Zakres (number)'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
+        scope_type: 'Typ'
+      pstn_table:
+        zone: 'Strefa (AB)'
+        scope: 'Zakres (numer)'
+        operator_name: 'Operator (nazwa)'
+        operator: 'Operator (ID)'
+        zone_name: 'Strefa (nazwa)'
+        zone_symbol: 'Strefa (symbol)'
+        numbering_area: 'Obszar numeracyjny'
+        modification: 'Data modyfikacji'
+      voip_table:
+        scope: 'Zakres (number)'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
   date:
     abbr_day_names:
     - nie
