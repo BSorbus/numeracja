@@ -182,6 +182,42 @@ pl:
         zone_name: 'Strefa (nazwa)'
         zone_symbol: 'Strefa (symbol)'
         modification: 'Data modyfikacji'
+      hesc_table:
+        number: 'Numer'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
+        service_description: 'Opis usługi'
+        entity_providing_services: 'Podmiot świadczący usługi'
+      ispc_table:
+        number: 'Numer'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        location: 'Lokalizacja'
+        modification: 'Data modyfikacji'
+      mnc_table:
+        number: 'Numer'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        network: 'Śieć'
+        modification: 'Data modyfikacji'
+      ndin_table:
+        scope: 'Zakres'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        service_type_name: 'Nazwa typu uslugi'
+        modification: 'Data modyfikacji'
+      nds_table:
+        number: 'Numer'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
+      ndsi_table:
+        number: 'Numer'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (nazwa)'
+        number_type: 'Typ numeru'
+        modification: 'Data modyfikacji'
   date:
     abbr_day_names:
     - nie

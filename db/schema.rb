@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   create_table "aus_tables", force: :cascade do |t|
     t.integer "number"
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.integer "zone"
-    t.string "zone_name"
-    t.string "zone_symbol"
+    t.string "zone_name", default: ""
+    t.string "zone_symbol", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_aus_tables_on_modification"
     t.index ["number"], name: "index_aus_tables_on_number"
@@ -32,69 +32,26 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.index ["zone_symbol"], name: "index_aus_tables_on_zone_symbol"
   end
 
-  create_table "clubs", force: :cascade do |t|
-    t.string "number", default: ""
-    t.date "date_of_issue"
-    t.date "valid_to"
-    t.string "call_sign", default: ""
-    t.string "category", default: ""
-    t.integer "transmitter_power"
-    t.string "enduser_name", default: ""
-    t.string "enduser_city", default: ""
-    t.string "enduser_street", default: ""
-    t.string "enduser_house", default: ""
-    t.string "enduser_number", default: ""
-    t.string "applicant_name", default: ""
-    t.string "applicant_city", default: ""
-    t.string "applicant_street", default: ""
-    t.string "applicant_house", default: ""
-    t.string "applicant_number", default: ""
-    t.string "station_city", default: ""
-    t.string "station_street", default: ""
-    t.string "station_house", default: ""
-    t.string "station_number", default: ""
-    t.float "lat"
-    t.float "lng"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["applicant_city"], name: "index_clubs_on_applicant_city"
-    t.index ["applicant_house"], name: "index_clubs_on_applicant_house"
-    t.index ["applicant_name"], name: "index_clubs_on_applicant_name"
-    t.index ["applicant_number"], name: "index_clubs_on_applicant_number"
-    t.index ["applicant_street"], name: "index_clubs_on_applicant_street"
-    t.index ["call_sign"], name: "index_clubs_on_call_sign"
-    t.index ["category"], name: "index_clubs_on_category"
-    t.index ["date_of_issue"], name: "index_clubs_on_date_of_issue"
-    t.index ["enduser_city"], name: "index_clubs_on_enduser_city"
-    t.index ["enduser_house"], name: "index_clubs_on_enduser_house"
-    t.index ["enduser_name"], name: "index_clubs_on_enduser_name"
-    t.index ["enduser_number"], name: "index_clubs_on_enduser_number"
-    t.index ["enduser_street"], name: "index_clubs_on_enduser_street"
-    t.index ["lat"], name: "index_clubs_on_lat"
-    t.index ["lng"], name: "index_clubs_on_lng"
-    t.index ["number"], name: "index_clubs_on_number"
-    t.index ["station_city"], name: "index_clubs_on_station_city"
-    t.index ["station_house"], name: "index_clubs_on_station_house"
-    t.index ["station_number"], name: "index_clubs_on_station_number"
-    t.index ["station_street"], name: "index_clubs_on_station_street"
-    t.index ["transmitter_power"], name: "index_clubs_on_transmitter_power"
-    t.index ["valid_to"], name: "index_clubs_on_valid_to"
-  end
-
   create_table "hesc_tables", force: :cascade do |t|
     t.integer "number"
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.datetime "modification"
-    t.string "service_description"
-    t.string "entity_providing_services"
+    t.string "service_description", default: ""
+    t.string "entity_providing_services", default: ""
+    t.index ["entity_providing_services"], name: "index_hesc_tables_on_entity_providing_services"
+    t.index ["modification"], name: "index_hesc_tables_on_modification"
+    t.index ["number"], name: "index_hesc_tables_on_number"
+    t.index ["operator"], name: "index_hesc_tables_on_operator"
+    t.index ["operator_name"], name: "index_hesc_tables_on_operator_name"
+    t.index ["service_description"], name: "index_hesc_tables_on_service_description"
   end
 
   create_table "ispc_tables", force: :cascade do |t|
-    t.string "number"
+    t.string "number", default: ""
     t.integer "operator"
-    t.string "operator_name"
-    t.string "location"
+    t.string "operator_name", default: ""
+    t.string "location", default: ""
     t.datetime "modification"
     t.index ["location"], name: "index_ispc_tables_on_location"
     t.index ["modification"], name: "index_ispc_tables_on_modification"
@@ -104,10 +61,10 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   end
 
   create_table "mnc_tables", force: :cascade do |t|
-    t.string "number"
+    t.string "number", default: ""
     t.integer "operator"
-    t.string "operator_name"
-    t.string "network"
+    t.string "operator_name", default: ""
+    t.string "network", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_mnc_tables_on_modification"
     t.index ["network"], name: "index_mnc_tables_on_network"
@@ -117,10 +74,10 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   end
 
   create_table "ndin_tables", force: :cascade do |t|
-    t.string "scope"
-    t.string "operator_name"
+    t.string "scope", default: ""
+    t.string "operator_name", default: ""
     t.integer "operator"
-    t.string "service_type_name"
+    t.string "service_type_name", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_ndin_tables_on_modification"
     t.index ["operator"], name: "index_ndin_tables_on_operator"
@@ -132,7 +89,7 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   create_table "nds_tables", force: :cascade do |t|
     t.integer "number"
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_nds_tables_on_modification"
     t.index ["number"], name: "index_nds_tables_on_number"
@@ -143,7 +100,7 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   create_table "ndsi_tables", force: :cascade do |t|
     t.integer "number"
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.integer "number_type"
     t.datetime "modification"
     t.index ["modification"], name: "index_ndsi_tables_on_modification"
@@ -154,12 +111,12 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   end
 
   create_table "nrnp_tables", force: :cascade do |t|
-    t.string "routing_number"
-    t.string "routing_number_type"
-    t.string "zone"
-    t.string "zone_symbol"
+    t.string "routing_number", default: ""
+    t.string "routing_number_type", default: ""
+    t.string "zone", default: ""
+    t.string "zone_symbol", default: ""
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_nrnp_tables_on_modification"
     t.index ["operator"], name: "index_nrnp_tables_on_operator"
@@ -174,7 +131,7 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.integer "zone"
     t.integer "number"
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_nspc_tables_on_modification"
     t.index ["number"], name: "index_nspc_tables_on_number"
@@ -184,11 +141,11 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   end
 
   create_table "plmn_tables", force: :cascade do |t|
-    t.string "scope"
+    t.string "scope", default: ""
     t.integer "operator"
-    t.string "operator_name"
+    t.string "operator_name", default: ""
     t.datetime "modification"
-    t.string "scope_type"
+    t.string "scope_type", default: ""
     t.index ["modification"], name: "index_plmn_tables_on_modification"
     t.index ["operator"], name: "index_plmn_tables_on_operator"
     t.index ["operator_name"], name: "index_plmn_tables_on_operator_name"
@@ -198,12 +155,12 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
 
   create_table "pstn_tables", force: :cascade do |t|
     t.integer "zone"
-    t.string "scope"
-    t.string "operator_name"
+    t.string "scope", default: ""
+    t.string "operator_name", default: ""
     t.integer "operator"
-    t.string "zone_name"
-    t.string "zone_symbol"
-    t.string "numbering_area"
+    t.string "zone_name", default: ""
+    t.string "zone_symbol", default: ""
+    t.string "numbering_area", default: ""
     t.datetime "modification"
     t.index ["modification"], name: "index_pstn_tables_on_modification"
     t.index ["numbering_area"], name: "index_pstn_tables_on_numbering_area"
@@ -216,10 +173,14 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
   end
 
   create_table "voip_tables", force: :cascade do |t|
-    t.string "scope"
-    t.string "operator_name"
+    t.string "scope", default: ""
+    t.string "operator_name", default: ""
     t.integer "operator"
     t.datetime "modification"
+    t.index ["modification"], name: "index_voip_tables_on_modification"
+    t.index ["operator"], name: "index_voip_tables_on_operator"
+    t.index ["operator_name"], name: "index_voip_tables_on_operator_name"
+    t.index ["scope"], name: "index_voip_tables_on_scope"
   end
 
 end

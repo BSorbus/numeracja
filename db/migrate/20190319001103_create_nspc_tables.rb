@@ -4,8 +4,8 @@ class CreateNspcTables < ActiveRecord::Migration[5.2]
       t.integer :zone,          index: true
       t.integer :number,        index: true
       t.integer :operator,      index: true
-      t.string :operator_name,  index: true
-      t.datetime :modification,  index: true
+      t.string :operator_name,  index: true, default: ""
+      t.datetime :modification, index: true
 
       #t.timestamps
     end

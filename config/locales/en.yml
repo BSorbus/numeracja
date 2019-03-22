@@ -178,6 +178,43 @@ en:
         zone_name: 'Zone (name)'
         zone_symbol: 'Zone (symbol)'
         modification: 'Modification date'
+      hesc_table:
+        number: 'Number'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        modification: 'Modification date'
+        service_description: 'Service description'
+        entity_providing_services: 'Entity providing services'
+      ispc_table:
+        number: 'Number'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        location: 'Location'
+        modification: 'Modification date'
+      mnc_table:
+        number: 'Number'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        network: 'Network'
+        modification: 'Modification date'
+      ndin_table:
+        scope: 'Scope'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        service_type_name: 'Service type name'
+        modification: 'Modification date'
+      nds_table:
+        number: 'Number'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        modification: 'Modification date'
+      ndsi_table:
+        number: 'Number'
+        operator: 'Operator (ID)'
+        operator_name: 'Operator (name)'
+        number_type: 'Number type'
+        modification: 'Modification date'
+
   date:
     abbr_day_names:
     - Sun

@@ -39,13 +39,6 @@ Rails.application.routes.draw do
       get 'export', on: :collection
     end
 
-
-
-    resources :clubs, only: [:index, :show] do
-      get 'export', on: :collection
-    end
-
-
     get 'datatables/lang'
 
 	  get 'static_pages/home'
