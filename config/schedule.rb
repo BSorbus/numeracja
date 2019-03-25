@@ -11,6 +11,6 @@ set :environment, :production
 set :output, "#{Rails.root}/log/cron_log.log"
 
 
-every '59 12 * * 1-6' do
+every '10 18 * * 1-6' do
   rake "cronjobs:plicbd_sync"
 end

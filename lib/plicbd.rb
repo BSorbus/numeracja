@@ -16,8 +16,7 @@ module PlicbdModule
         STORE_DIR="/webapps/www/numeracja/current/db/seeds"
         PLI_CERT_DIR="/webapps/www/certyfikaty_plicbd"
         DATE_STR=$(date +"%Y%m%d")
-        #FILE_NAME="TabliceNumeracjiUKE_$DATE_STR.zip"
-        FILE_NAME="TabliceNumeracjiUKE_20190324.zip"
+        FILE_NAME="TabliceNumeracjiUKE_$DATE_STR.zip"
         DESTINATION_FILE="$STORE_DIR/$FILE_NAME"
         LOG_FILE="/webapps/www/numeracja/current/log/plicbd.log"
 
