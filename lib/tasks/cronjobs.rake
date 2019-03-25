@@ -1,5 +1,5 @@
 # lib/tasks/cronjobs.rake
-require 'pwid'
+require 'plicbd'
 
 namespace :cronjobs do
   desc "Synchronize data with system PWID-AMATOR"

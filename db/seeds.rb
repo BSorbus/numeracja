@@ -6,15 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'pwid'
+# require 'plicbd'
 
-puts " "
-puts "#####  RUN - seeds/pwid_whenever.rb  #####"
-puts " "
+# puts " "
+# puts "#####  RUN - seeds  #####"
+# puts " "
 
-PwidModule::pwid_whenever
+# PwidModule::load_data_from_plicbd
 
-puts " "
-puts "#####  END OF - seeds/pwid_whenever.rb  #####"
-puts " "
+# puts " "
+# puts "#####  END OF - seeds  #####"
+# puts " "
 
