@@ -26,28 +26,28 @@ pl:
       title: 'Klub'
   pstn_tables:
     index:
-      title_primary: 'Stacjonarne publiczne sieci telefoniczne'
+      title_primary: 'Stacjonarne publiczne sieci telekomunikacyjne'
       title: 'Tablica Zagospodarowania Numeracji abonenckiej dla stacjonarnej publicznej sieci telekomunikacyjnej PSTN'
       navbar: 'TZN PSTN'
     show:
       title: 'TZN PLMN'
   plmn_tables:
     index:
-      title_primary: 'Ruchome (komórkowe) publiczne sieci telefoniczne'
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
       title: 'Tablica Zagospodarowania Numeracji abonenckiej dla ruchomej publicznej sieci telekomunikacyjnej PLMN'
       navbar: 'TZN PLMN'
     show:
       title: 'TZN PLMN'
   mnc_tables:
     index:
-      title_primary: 'Ruchome (komórkowe) publiczne sieci telefoniczne'
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
       title: 'Tablica Zagospodarowania kodów sieci ruchomej MNC'
       navbar: 'TZN MNC'
     show:
       title: 'TZN MNC'
   plmn_mnc:
     index:
-      title_primary: 'Ruchome (komórkowe) publiczne sieci telefoniczne'
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
       navbar: 'TZN PLMN, MNC'
   ndsi_tables:
     index:
@@ -58,7 +58,7 @@ pl:
       title: 'TZN NDSI'
   aus_tables:
     index:
-      title_primary: 'Numery abonenckich usług specjalnych'
+      title_primary: 'Numery abonenckich usług specjalnych (AUS)'
       title: 'Tablica Zagospodarowania Numeracji abonenckich usług specjalnych AUS (5D)'
       navbar: 'TZN AUS'
     show:

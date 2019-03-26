@@ -56,7 +56,7 @@ en:
       title: 'TZN NDSI'
   aus_tables:
     index:
-      title_primary: 'Table of numbers for special services'
+      title_primary: 'Table of numbers for special services (AUS)'
       title: 'Table for manage of subscriber numbers for the special services AUS (5D)'
       navbar: 'TZN AUS'
     show:

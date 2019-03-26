@@ -49,9 +49,9 @@ $(document).ready(function() {
       { "data": "number" }, 
       { "data": "operator" },
       { "data": "operator_name" },
-      { "data": "modification" },
       { "data": "service_description" },
-      { "data": "entity_providing_services" }
+      { "data": "entity_providing_services" },
+      { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {

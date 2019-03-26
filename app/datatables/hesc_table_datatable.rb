@@ -6,9 +6,9 @@ class HescTableDatatable < AjaxDatatablesRails::ActiveRecord
       number:                     { source: "HescTable.number", cond: :like, searchable: true, orderable: true },
       operator:                   { source: "HescTable.operator" },
       operator_name:              { source: "HescTable.operator_name" },
-      modification:               { source: "HescTable.modification" },
       service_description:        { source: "HescTable.service_description" },
-      entity_providing_services:  { source: "HescTable.entity_providing_services" }
+      entity_providing_services:  { source: "HescTable.entity_providing_services" },
+      modification:               { source: "HescTable.modification" }
     }
   end
 
@@ -19,9 +19,9 @@ class HescTableDatatable < AjaxDatatablesRails::ActiveRecord
         number:                     record.number,
         operator:                   record.operator,
         operator_name:              record.operator_name,
-        modification:               record.modification.strftime("%Y-%m-%d %H:%M"),
         service_description:        record.service_description,
-        entity_providing_services:  record.entity_providing_services
+        entity_providing_services:  record.entity_providing_services,
+        modification:               record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end
