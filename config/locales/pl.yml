@@ -18,12 +18,8 @@ pl:
   static_pages:
     home:
       title: 'Tablice Zagospodarowania Numeracji'
-  clubs:
-    index:
-      title: 'Wykaz pozwoleń wydanych osobom prawnym'
-      navbar: 'Kluby'
-    show:
-      title: 'Klub'
+    info:
+      title: 'Zbiorcze zestawienia numeracji przydzielonej przedsiębiorcom telekomunikacyjnym, zgodnie z Planem numeracji krajowej dla publicznych sieci telekomunikacyjnych'
   pstn_tables:
     index:
       title_primary: 'Stacjonarne publiczne sieci telekomunikacyjne'
@@ -107,15 +103,15 @@ pl:
       title_primary: 'Usługi wykorzystujące technologię IP'
       title: 'Tablica Zagospodarowania Numeracji niegeograficznej (o wyróżniku sieci WST AB=39) dla świadczenia usług telefonii wykorzystującej pakietową transmisję danych w technologii IP (VoIP)'
       navbar: 'TZN VOIP'
-    show:
-      title: 'TZN VOIP'
   nrnp_tables:
     index:
       title_primary: 'Numery rutingowe'
-      title: 'Tablica Zagospodarowania numerów rutingowych NRNP'
+      title: 'Tablica Zagospodarowania numerów rutingowych NR NP'
       navbar: 'TZN NRNP'
-    show:
-      title: 'TZN NRNP'
+  prm_tables:
+    index:
+      title: 'Rejestr numerów wykorzystywanych do świadczenia usługi o podwyższonej opłacie'
+      navbar: 'PRM'
   shared:
     basic_info:
       fieldset_title: 'Dane podstawowe'

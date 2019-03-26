@@ -18,102 +18,98 @@ en:
   static_pages:
     home:
       title: 'Numbering Management Tables'
-  clubs:
-    index:
-      title: 'A list of authorizations issued for legal entity'
-      navbar: 'Clubs'
-    show:
-      title: 'Club'
+    info:
+      title: 'Aggregate numbering lists assigned to telecommunications undertakings in accordance with the National Numbering Plan for Public Telephone Networks'
   pstn_tables:
     index:
-      title_primary: 'Stationary public telephone networks'
-      title: 'Table for manage of subscriber numbers for the public stationary telecommunications network PSTN'
+      title_primary: 'Fixed public telecommunications networks'
+      title: 'Numbering Management Table for fixed public telecommunications network (PSTN)'
       navbar: 'TZN PSTN'
   plmn_tables:
     index:
-      title_primary: 'Mobile public telephone networks'
-      title: 'Table for manage of subscriber numbers for the public mobile telecommunications network PSTN'
+      title_primary: 'Mobile public telecommunications networks'
+      title: 'Numbering Management Table for mobile public telecommunications network (PLMN)'
       navbar: 'TZN PLMN'
     show:
       title: 'TZN PLMN'
   mnc_tables:
     index:
-      title_primary: 'Mobile public telephone networks'
-      title: 'Table for manage codes for the public, mobile MNC network'
+      title_primary: 'Mobile public telecommunications networks'
+      title: 'Table of mobile network codes (MNC)'
       navbar: 'TZN MNC'
     show:
       title: 'TZN MNC'
   plmn_mnc:
     index:
-      title_primary: 'Mobile public telephone networks'
+      title_primary: 'Mobile public telecommunications networks'
       navbar: 'TZN PLMN, MNC'
   ndsi_tables:
     index:
-      title_primary: 'Teleinformation networks (Internet)'
-      title: 'Table for manage numbers for access of the teleinformation networks NDSI'
+      title_primary: 'IT networks (Internet)'
+      title: 'Numbering Management Table of IT network access numbers (NDSI)'
       navbar: 'TZN NDSI'
     show:
       title: 'TZN NDSI'
   aus_tables:
     index:
-      title_primary: 'Table of numbers for special services (AUS)'
-      title: 'Table for manage of subscriber numbers for the special services AUS (5D)'
+      title_primary: 'Numbers for special subscriber services (AUS)'
+      title: 'Numbering Management Table of special subscriber services AUS (5D)'
       navbar: 'TZN AUS'
     show:
       title: 'TZN AUS'
   hesc_tables:
     index:
-      title_primary: 'Table for manage numbers for the special and harmonized services with a social value'
-      title: 'Tablice numeracji HESC z zakresu 116 i 118'
+      title_primary: 'Numbering for special subscriber services and harmonized services of social value'
+      title: 'Numbering Tables of Harmonised European Short Codes (HESC) for ranges 116 and 118'
       navbar: 'TZN HESC'
     show:
       title: 'TZN HESC'
   ndin_tables:
     index:
-      title_primary: 'Sieci inteligentne (70, 80)'
-      title: 'Tablica Zagospodarowania Numeracji dostępu do usług sieci inteligentnych IN'
+      title_primary: 'Intelligent networks (70, 80)'
+      title: 'Numbering Management Table of access numbers to intelligent network services (IN)'
       navbar: 'TZN NDIN'
     show:
       title: 'TZN NDIN'
   nds_tables:
     index:
-      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
-      title: 'Tablica Zagospodarowania Numeracji dostępu do sieci NDS'
+      title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
+      title: 'Numbering Management Table of network access numbers (NDS)'
       navbar: 'TZN NDS'
     show:
       title: 'TZN NDS'
   ispc_tables:
     index:
-      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
-      title: 'Tablica Zagospodarowania Numeracji Międzynarodowych Punktów Sygnalizacyjnych ISPC'
+      title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
+      title: 'Numbering Management Table of international signaling point codes (ISPC)'
       navbar: 'TZN ISPC'
     show:
       title: 'TZN ISPC'
   nspc_tables:
     index:
-      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
-      title: 'Tablica Zagospodarowania Numeracji Krajowych Punktów Sygnalizacyjnych NSPC'
+      title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
+      title: 'Numbering Management Table of national signaling point codes (NSPC)'
       navbar: 'TZN NSPC'
     show:
       title: 'TZN NSPC'
   nds_ispc_nspc:
     index:
-      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
       navbar: 'TZN NDS, ISPC, NSPC'
   voip_tables:
     index:
-      title_primary: 'Usługi wykorzystujące technologię IP'
-      title: 'Tablica Zagospodarowania Numeracji niegeograficznej (o wyróżniku sieci WST AB=39) dla świadczenia usług telefonii wykorzystującej pakietową transmisję danych w technologii IP (VoIP)'
+      title_primary: 'IP services'
+      title: 'Numbering Management Table of non-geographic numbers (with the network identifier AB=39) for telephone services using data packet transmission based on IP technology (VoIP)'
       navbar: 'TZN VOIP'
-    show:
-      title: 'TZN VOIP'
   nrnp_tables:
     index:
-      title_primary: 'Numery rutingowe'
-      title: 'Tablica Zagospodarowania numerów rutingowych NRNP'
+      title_primary: 'Routing numbers'
+      title: 'Numbering Management Table of routing numbers'
       navbar: 'TZN NRNP'
-    show:
-      title: 'TZN NRNP'
+  prm_tables:
+    index:
+      title: 'Register of premium rate service numbers'
+      navbar: 'PRM'
   shared:
     basic_info:
       fieldset_title: 'Basic information'
