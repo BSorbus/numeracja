@@ -15,4 +15,10 @@ class NdsiTablesController < ApplicationController
       disposition: "attachment; filename=NDSI.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/NDSI.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=NDSI.xml"
+  end
+
 end

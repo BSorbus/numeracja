@@ -2,18 +2,29 @@
 $(document).ready(function() {
 
   $.fn.dataTable.ext.buttons.ispc_tables_export_csv = {
-    text: '<span class="fa fa-download"></span>',
-    titleAttr: 'Export',
+    text: '<span class="fa fa-file-csv"></span>',
+    titleAttr: 'Export CSV',
     className: 'btn btn-default',
     action: function ( e, dt, button, config ) {
       window.location = $('#ispc_tables-datatable').data('export_csv_url');
     }  
   };
 
+  $.fn.dataTable.ext.buttons.ispc_tables_export_xml = {
+    text: '<span class="fa fa-file-code"></span>',
+    titleAttr: 'Export XML',
+    className: 'btn btn-default',
+    action: function ( e, dt, button, config ) {
+      window.location = $('#ispc_tables-datatable').data('export_xml_url');
+    }  
+  };
+
+
   var oClubsTable = $('#ispc_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
       'ispc_tables_export_csv', 
+      'ispc_tables_export_xml',
       {
         extend:    'colvis',
         text:      '<span class="fa fa-columns"></span>',

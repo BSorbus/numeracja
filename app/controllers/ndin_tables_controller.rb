@@ -15,4 +15,10 @@ class NdinTablesController < ApplicationController
       disposition: "attachment; filename=IN.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/IN.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=IN.xml"
+  end
+
 end

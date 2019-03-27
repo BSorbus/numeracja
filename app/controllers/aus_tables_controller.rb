@@ -15,6 +15,10 @@ class AusTablesController < ApplicationController
       disposition: "attachment; filename=AUS.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/AUS.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=AUS.xml"
+  end
+
 end
-
-

@@ -16,7 +16,8 @@
       <table id="plmn_tables-datatable" class="hover cell-border" cellspacing="0" width="100%", 
         data-source="<%= plmn_tables_path(format: :json) %>", 
         data-locale_url="<%= datatables_lang_path(format: :json) %>", 
-        data-export_csv_url="<%= export_plmn_tables_path(format: :csv) %>">
+        data-export_csv_url="<%= export_plmn_tables_path(format: :csv) %>",
+        data-export_xml_url="<%= export_plmn_tables_path(format: :xml) %>">
         <thead>
           <tr>
             <th>id</th>

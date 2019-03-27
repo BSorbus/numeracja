@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_19_005214) do
+ActiveRecord::Schema.define(version: 2019_03_19_005225) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -151,6 +151,21 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.index ["operator_name"], name: "index_plmn_tables_on_operator_name"
     t.index ["scope"], name: "index_plmn_tables_on_scope"
     t.index ["scope_type"], name: "index_plmn_tables_on_scope_type"
+  end
+
+  create_table "prm_tables", force: :cascade do |t|
+    t.string "number", default: ""
+    t.string "service_name", default: ""
+    t.string "operators", default: ""
+    t.string "implementing_entity", default: ""
+    t.date "start_date"
+    t.date "transfer_date"
+    t.index ["implementing_entity"], name: "index_prm_tables_on_implementing_entity"
+    t.index ["number"], name: "index_prm_tables_on_number"
+    t.index ["operators"], name: "index_prm_tables_on_operators"
+    t.index ["service_name"], name: "index_prm_tables_on_service_name"
+    t.index ["start_date"], name: "index_prm_tables_on_start_date"
+    t.index ["transfer_date"], name: "index_prm_tables_on_transfer_date"
   end
 
   create_table "pstn_tables", force: :cascade do |t|

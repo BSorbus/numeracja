@@ -15,4 +15,10 @@ class MncTablesController < ApplicationController
       disposition: "attachment; filename=MNC.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/MNC.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=MNC.xml"
+  end
+
 end

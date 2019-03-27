@@ -2,18 +2,29 @@
 $(document).ready(function() {
 
   $.fn.dataTable.ext.buttons.nds_tables_export_csv = {
-    text: '<span class="fa fa-download"></span>',
-    titleAttr: 'Export',
+    text: '<span class="fa fa-file-csv"></span>',
+    titleAttr: 'Export CSV',
     className: 'btn btn-default',
     action: function ( e, dt, button, config ) {
       window.location = $('#nds_tables-datatable').data('export_csv_url');
     }  
   };
 
+  $.fn.dataTable.ext.buttons.nds_tables_export_xml = {
+    text: '<span class="fa fa-file-code"></span>',
+    titleAttr: 'Export XML',
+    className: 'btn btn-default',
+    action: function ( e, dt, button, config ) {
+      window.location = $('#nds_tables-datatable').data('export_xml_url');
+    }  
+  };
+
+
   var oClubsTable = $('#nds_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
-      'nds_tables_export_csv', 
+      'nds_tables_export_csv',
+      'nds_tables_export_xml',
       {
         extend:    'colvis',
         text:      '<span class="fa fa-columns"></span>',

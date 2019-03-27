@@ -15,4 +15,10 @@ class PstnTablesController < ApplicationController
       disposition: "attachment; filename=PSTN.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/PSTN.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=PSTN.xml"
+  end
+
 end

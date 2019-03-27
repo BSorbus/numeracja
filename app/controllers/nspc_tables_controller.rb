@@ -15,4 +15,10 @@ class NspcTablesController < ApplicationController
       disposition: "attachment; filename=NSPC.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/NSPC.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=NSPC.xml"
+  end
+
 end

@@ -15,4 +15,10 @@ class NrnpTablesController < ApplicationController
       disposition: "attachment; filename=NRNP.csv"
   end
 
+  def export_xml
+    send_file "#{Rails.application.secrets.csv_files_path}/NRNP.xml", 
+      type: 'text/csv; charset=utf-8; header=present', 
+      disposition: "attachment; filename=NRNP.xml"
+  end
+
 end
