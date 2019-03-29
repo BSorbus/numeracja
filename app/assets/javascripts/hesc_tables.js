@@ -20,7 +20,7 @@ $(document).ready(function() {
   };
 
 
-  var oClubsTable = $('#hesc_tables-datatable').DataTable({
+  var oHescTable = $('#hesc_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
       'hesc_tables_export_csv', 

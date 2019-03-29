@@ -20,7 +20,7 @@ $(document).ready(function() {
   };
 
 
-  var oClubsTable = $('#nds_tables-datatable').DataTable({
+  var oNdsTable = $('#nds_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
       'nds_tables_export_csv',

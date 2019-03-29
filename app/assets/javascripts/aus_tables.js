@@ -19,7 +19,7 @@ $(document).ready(function() {
     }  
   };
 
-  var oClubsTable = $('#aus_tables-datatable').DataTable({
+  var oAusTable = $('#aus_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
       'aus_tables_export_csv', 

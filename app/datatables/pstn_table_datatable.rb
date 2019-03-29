@@ -3,8 +3,8 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:             { source: "PstnTable.id" },
-      scope:          { source: "PstnTable.scope", cond: :like, searchable: true, orderable: true },
-      operator:       { source: "PstnTable.operator" },
+      scope:          { source: "PstnTable.scope", cond: filter_custom_column_condition },
+      operator:       { source: "PstnTable.operator"},
       operator_name:  { source: "PstnTable.operator_name" },
       zone:           { source: "PstnTable.zone" },
       zone_name:      { source: "PstnTable.zone_name" },
@@ -34,6 +34,34 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
     # insert query here
     PstnTable.all
   end
+
+
+  def filter_custom_column_condition
+    #->(column) { ::Arel::Nodes::SqlLiteral.new(column.field.to_s).matches("#{ column.search.value }%") }
+    ->(column, value) {
+        sanitize_search_text = Loofah.fragment(value).text;
+        sql_str = "( " + 
+          "'#{sanitize_search_text}' ~ ('^' || replace(replace(replace(scope, '(', '['), ',', ''), ')', ']')  || '[0-9]{0,3}$') OR " +
+          "scope ILIKE '%#{sanitize_search_text}%' " +
+          ") ";
+        ::Arel::Nodes::SqlLiteral.new("#{sql_str}") 
+        }
+  end
+
+
+  # def filter_custom_column_condition
+  #   #->(column) { ::Arel::Nodes::SqlLiteral.new(column.field.to_s).matches("#{ column.search.value }%") }
+  #   ->(column, value) {
+  #       sanitize_search_text = Loofah.fragment(value).text;
+  #       sql_str = " " + 
+  #         "'#{sanitize_search_text}' ~ ('^' || zone || replace(replace(replace(scope, '(', '['), ',', ''), ')', ']')  || '[0-9]{0,3}$') OR " +
+  #         "'#{sanitize_search_text}' ~ ('^' || replace(replace(replace(scope, '(', '['), ',', ''), ')', ']')  || '[0-9]{0,3}$') OR " +
+  #         "pstn_tables.zone || pstn_tables.scope ILIKE '%#{sanitize_search_text}%' " +
+  #         " ";
+  #       ::Arel::Nodes::SqlLiteral.new("#{sql_str}") 
+  #       }
+  # end
+
 
 end
 

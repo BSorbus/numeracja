@@ -20,7 +20,7 @@ $(document).ready(function() {
   };
 
 
-  var oClubsTable = $('#nrnp_tables-datatable').DataTable({
+  var oNrnpTable = $('#nrnp_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
       'nrnp_tables_export_csv',

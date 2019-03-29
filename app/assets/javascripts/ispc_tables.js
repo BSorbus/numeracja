@@ -20,7 +20,7 @@ $(document).ready(function() {
   };
 
 
-  var oClubsTable = $('#ispc_tables-datatable').DataTable({
+  var oIspcTable = $('#ispc_tables-datatable').DataTable({
     dom: 'lBfrtip',
     buttons: [
       'ispc_tables_export_csv', 

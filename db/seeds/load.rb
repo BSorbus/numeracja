@@ -14,7 +14,6 @@ NspcTable.load_data_from_csv_file
 PlmnTable.load_data_from_csv_file
 PstnTable.load_data_from_csv_file
 VoipTable.load_data_from_csv_file
-PrmTable.load_data_from_csv_file
 
 
 puts " "

@@ -28,16 +28,31 @@ div.dt-buttons {
   float: right;
 }
 
+//tfoot {
+//    display: table-header-group;
+//}
+
 tfoot {
   display: table-row-group;
 }
 
+
+//table.dataTable thead th {
+//  border-bottom: 0;
+//}
+
+table.dataTable tfoot th {
+  border-top: 0;
+  border-bottom: 1px solid black;
+}
+
+
   input.column_filter {
-    margin-top: -7px;
+    margin-top: -5px;
     margin-left: -5px;
   };
   select.column_filter {
-    margin-top: -7px;
+    margin-top: -5px;
     margin-left: -5px;
   }
 
