@@ -4,9 +4,9 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:             { source: "PstnTable.id" },
       scope:          { source: "PstnTable.scope", cond: filter_custom_column_condition },
-      operator:       { source: "PstnTable.operator"},
+      operator:       { source: "PstnTable.operator", cond: :eq },
       operator_name:  { source: "PstnTable.operator_name" },
-      zone:           { source: "PstnTable.zone" },
+      zone:           { source: "PstnTable.zone", cond: :eq },
       zone_name:      { source: "PstnTable.zone_name" },
       zone_symbol:    { source: "PstnTable.zone_symbol" },
       numbering_area: { source: "PstnTable.numbering_area" },
@@ -42,7 +42,7 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
         sanitize_search_text = Loofah.fragment(value).text;
         sql_str = "( " + 
           "'#{sanitize_search_text}' ~ ('^' || replace(replace(replace(scope, '(', '['), ',', ''), ')', ']')  || '[0-9]{0,3}$') OR " +
-          "scope ILIKE '%#{sanitize_search_text}%' " +
+          "scope ILIKE '#{sanitize_search_text}%' " +
           ") ";
         ::Arel::Nodes::SqlLiteral.new("#{sql_str}") 
         }
