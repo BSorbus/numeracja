@@ -4,7 +4,7 @@ class NdsTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "NdsTable.id" },
       number:             { source: "NdsTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "NdsTable.operator" },
+      operator:           { source: "NdsTable.operator", cond: :eq },
       operator_name:      { source: "NdsTable.operator_name" },
       modification:       { source: "NdsTable.modification" }
     }

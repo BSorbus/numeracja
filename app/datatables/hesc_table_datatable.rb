@@ -4,7 +4,7 @@ class HescTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                         { source: "HescTable.id" },
       number:                     { source: "HescTable.number", cond: :like, searchable: true, orderable: true },
-      operator:                   { source: "HescTable.operator" },
+      operator:                   { source: "HescTable.operator", cond: :eq },
       operator_name:              { source: "HescTable.operator_name" },
       service_description:        { source: "HescTable.service_description" },
       entity_providing_services:  { source: "HescTable.entity_providing_services" },

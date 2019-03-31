@@ -4,9 +4,9 @@ class AusTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "AusTable.id" },
       number:             { source: "AusTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "AusTable.operator" },
+      operator:           { source: "AusTable.operator", cond: :eq },
       operator_name:      { source: "AusTable.operator_name" },
-      zone:               { source: "AusTable.zone" },
+      zone:               { source: "AusTable.zone", cond: :eq },
       zone_name:          { source: "AusTable.zone_name" },
       zone_symbol:        { source: "AusTable.zone_symbol" },
       modification:       { source: "AusTable.modification" }

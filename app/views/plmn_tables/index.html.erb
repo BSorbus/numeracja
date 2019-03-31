@@ -29,6 +29,29 @@
           </tr>
         </thead>
 
+        <tfoot style='display: none;'>
+          <tr>
+            <th></th> <!-- 0 id -->
+            <th> <!-- 1 scope -->
+              <%= text_field_tag :col1filter, params[:col1filter], id: 'col1filter', 'data-column' => "1", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 2 operator -->
+              <%= text_field_tag :col2filter, params[:col2filter], id: 'col2filter', 'data-column' => "2", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 3 operator_name -->
+              <%= text_field_tag :col3filter, params[:col3filter], id: 'col3filter', 'data-column' => "3", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 4 scope_type -->
+              <%= text_field_tag :col4filter, params[:col4filter], id: 'col4filter', 'data-column' => "4", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th></th>
+          </tr>
+        </tfoot>
+
         <tbody>
            <!--data from JSON -->
         </tbody>

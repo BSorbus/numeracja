@@ -28,18 +28,17 @@ div.dt-buttons {
   float: right;
 }
 
-//tfoot {
-//    display: table-header-group;
-//}
-
 tfoot {
-  display: table-row-group;
+    display: table-header-group;
 }
 
-
-//table.dataTable thead th {
-//  border-bottom: 0;
+//tfoot {
+//  display: table-row-group;
 //}
+
+table.dataTable {
+    border-bottom: 1px solid black !important;
+}
 
 table.dataTable tfoot th {
   border-top: 0;

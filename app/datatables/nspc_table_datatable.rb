@@ -3,9 +3,9 @@ class NspcTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:                 { source: "NspcTable.id" },
-      zone:               { source: "NspcTable.zone" },
+      zone:               { source: "NspcTable.zone", cond: :eq },
       number:             { source: "NspcTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "NspcTable.operator" },
+      operator:           { source: "NspcTable.operator", cond: :eq },
       operator_name:      { source: "NspcTable.operator_name" },
       modification:       { source: "NspcTable.modification" }
     }

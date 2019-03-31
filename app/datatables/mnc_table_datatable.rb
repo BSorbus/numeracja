@@ -4,7 +4,7 @@ class MncTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "MncTable.id" },
       number:             { source: "MncTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "MncTable.operator" },
+      operator:           { source: "MncTable.operator", cond: :eq },
       operator_name:      { source: "MncTable.operator_name" },
       network:            { source: "MncTable.network" },
       modification:       { source: "MncTable.modification" }

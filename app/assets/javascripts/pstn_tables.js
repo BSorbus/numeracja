@@ -51,11 +51,6 @@ $(document).ready(function() {
 
 
   var oPstnTable = $('#pstn_tables-datatable').DataTable({
-    fixedHeader: {
-      header: true,
-      footer: true
-    },
-    sPlaceHolder: "head:before",
     dom: 'lBfrtip',
     buttons: [
       'pstn_tables_export_csv',
@@ -91,8 +86,7 @@ $(document).ready(function() {
     pagingType: "full_numbers",
     lengthMenu: [[10, 15, 25, 50, 100], [10, 15, 25, 50, 100]],
     columns: [
-      { "data": "id",
-        "visible": false }, 
+      { "data": "id", "visible": false }, 
       { "data": "scope" }, 
       { "data": "operator" },
       { "data": "operator_name" },

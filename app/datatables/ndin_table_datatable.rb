@@ -3,10 +3,10 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:                 { source: "NdinTable.id" },
-      scope:              { source: "NdinTable.scope", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "NdinTable.operator" },
+      operator:           { source: "NdinTable.operator", cond: :eq },
       operator_name:      { source: "NdinTable.operator_name" },
       service_type_name:  { source: "NdinTable.service_type_name" },
+      scope:              { source: "NdinTable.scope", cond: filter_custom_column_condition },
       modification:       { source: "NdinTable.modification" }
     }
   end
@@ -27,6 +27,23 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
   def get_raw_records
     # insert query here
     NdinTable.all
+  end
+
+  # def filter_custom_column_condition
+  #   ->(column, value) { 
+  #     ::Arel::Nodes::SqlLiteral.new(" scope LIKE '#{ value }%' ") 
+  #   }
+  # end
+
+  def filter_custom_column_condition
+    ->(column, value) { 
+      sanitize_search_text = Loofah.fragment(value).text;
+      sql_str = "( " + 
+        "'#{sanitize_search_text}' ~ ('^' || replace(replace(replace(#{column.field.to_s}, '(', '['), ',', ''), ')', ']')  || '[0-9]*$') " +
+        " OR scope ILIKE '#{sanitize_search_text}%' ) " +
+        " AND (length('#{sanitize_search_text}') <= 9 ) ";
+      ::Arel::Nodes::SqlLiteral.new("#{sql_str}") 
+      }
   end
 
 end

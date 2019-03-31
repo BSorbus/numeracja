@@ -4,7 +4,7 @@ class IspcTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "IspcTable.id" },
       number:             { source: "IspcTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "IspcTable.operator" },
+      operator:           { source: "IspcTable.operator", cond: :eq },
       operator_name:      { source: "IspcTable.operator_name" },
       location:           { source: "IspcTable.location" },
       modification:       { source: "IspcTable.modification" }

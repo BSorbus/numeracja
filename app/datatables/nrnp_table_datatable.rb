@@ -5,9 +5,9 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
       id:                   { source: "NrnpTable.id" },
       routing_number:       { source: "NrnpTable.routing_number", cond: :like, searchable: true, orderable: true },
       routing_number_type:  { source: "NrnpTable.routing_number_type" },
-      zone:                 { source: "NrnpTable.zone" },
+      zone:                 { source: "NrnpTable.zone", cond: :eq },
       zone_symbol:          { source: "NrnpTable.zone_symbol" },
-      operator:             { source: "NrnpTable.operator" },
+      operator:             { source: "NrnpTable.operator", cond: :eq },
       operator_name:        { source: "NrnpTable.operator_name" },
       modification:         { source: "NrnpTable.modification" }
     }

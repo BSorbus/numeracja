@@ -31,6 +31,37 @@
           </tr>
         </thead>
 
+        <tfoot style='display: none;'>
+          <tr>
+            <th></th> <!-- 0 id -->
+            <th> <!-- 1 routing_number -->
+              <%= text_field_tag :col1filter, params[:col1filter], id: 'col1filter', 'data-column' => "1", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 2 routing_number_type -->
+              <%= text_field_tag :col2filter, params[:col2filter], id: 'col2filter', 'data-column' => "2", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 3 zone -->
+              <%= text_field_tag :col3filter, params[:col3filter], id: 'col3filter', 'data-column' => "3", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 4 zone_symbol -->
+              <%= text_field_tag :col4filter, params[:col4filter], id: 'col4filter', 'data-column' => "4", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 5 operator -->
+              <%= text_field_tag :col5filter, params[:col5filter], id: 'col5filter', 'data-column' => "5", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 6 operator_name -->
+              <%= text_field_tag :col6filter, params[:col6filter], id: 'col6filter', 'data-column' => "6", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th></th>
+          </tr>
+        </tfoot>
+
         <tbody>
            <!--data from JSON -->
         </tbody>
