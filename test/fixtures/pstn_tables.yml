@@ -1,20 +1,20 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  zone: 1
+  zone_ab: 1
   scope: MyString
-  operator_name: MyString
-  operator: 1
+  provider_name: MyString
+  provider_id: 1
   zone_name: MyString
   zone_symbol: MyString
   numbering_area: MyString
   modification: 2019-03-19 01:42:08
 
 two:
-  zone: 1
+  zone_ab: 1
   scope: MyString
-  operator_name: MyString
-  operator: 1
+  provider_name: MyString
+  provider_id: 1
   zone_name: MyString
   zone_symbol: MyString
   numbering_area: MyString

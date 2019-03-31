@@ -4,7 +4,7 @@ class VoipTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :scope, :operator_name, :operator, :modification ]
+    columns = [ :scope, :provider_name, :provider_id, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/VOIP.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

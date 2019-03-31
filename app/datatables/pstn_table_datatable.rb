@@ -3,9 +3,9 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:             { source: "PstnTable.id" },
-      operator:       { source: "PstnTable.operator", cond: :eq },
-      operator_name:  { source: "PstnTable.operator_name" },
-      zone:           { source: "PstnTable.zone", cond: :eq },
+      provider_id:    { source: "PstnTable.provider_id", cond: :eq },
+      provider_name:  { source: "PstnTable.provider_name" },
+      zone_ab:        { source: "PstnTable.zone_ab", cond: :eq },
       zone_name:      { source: "PstnTable.zone_name" },
       zone_symbol:    { source: "PstnTable.zone_symbol" },
       numbering_area: { source: "PstnTable.numbering_area" },
@@ -19,13 +19,13 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:             record.id,
         scope:          record.scope,
-        operator:       record.operator,
-        operator_name:  record.operator_name,
-        zone:           record.zone,
+        provider_id:    record.provider_id,
+        provider_name:  record.provider_name,
+        zone_ab:        record.zone_ab,
         zone_name:      record.zone_name,
         zone_symbol:    record.zone_symbol,
         numbering_area: record.numbering_area,
-        modification:   record.modification
+        modification:   record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

@@ -4,9 +4,9 @@ class AusTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "AusTable.id" },
       number:             { source: "AusTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "AusTable.operator", cond: :eq },
-      operator_name:      { source: "AusTable.operator_name" },
-      zone:               { source: "AusTable.zone", cond: :eq },
+      provider_id:        { source: "AusTable.provider_id", cond: :eq },
+      provider_name:      { source: "AusTable.provider_name" },
+      zone_ab:            { source: "AusTable.zone_ab", cond: :eq },
       zone_name:          { source: "AusTable.zone_name" },
       zone_symbol:        { source: "AusTable.zone_symbol" },
       modification:       { source: "AusTable.modification" }
@@ -18,9 +18,9 @@ class AusTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:                 record.id,
         number:             record.number,
-        operator:           record.operator,
-        operator_name:      record.operator_name,
-        zone:               record.zone,
+        provider_id:        record.provider_id,
+        provider_name:      record.provider_name,
+        zone_ab:            record.zone_ab,
         zone_name:          record.zone_name,
         zone_symbol:        record.zone_symbol,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")

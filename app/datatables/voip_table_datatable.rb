@@ -3,8 +3,8 @@ class VoipTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:             { source: "VoipTable.id" },
-      operator:       { source: "VoipTable.operator", cond: :eq },
-      operator_name:  { source: "VoipTable.operator_name" },
+      provider_id:    { source: "VoipTable.provider_id", cond: :eq },
+      provider_name:  { source: "VoipTable.provider_name" },
       scope:          { source: "VoipTable.scope", cond: filter_custom_column_condition },
       modification:   { source: "VoipTable.modification" }
     }
@@ -15,8 +15,8 @@ class VoipTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:             record.id,
         scope:          record.scope,
-        operator:       record.operator,
-        operator_name:  record.operator_name,
+        provider_id:    record.provider_id,
+        provider_name:  record.provider_name,
         modification:   record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end

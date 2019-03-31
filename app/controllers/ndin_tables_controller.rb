@@ -10,15 +10,18 @@ class NdinTablesController < ApplicationController
   end
 
   def export
-    send_file "#{Rails.application.secrets.csv_files_path}/IN.csv", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=IN.csv"
-  end
-
-  def export_xml
-    send_file "#{Rails.application.secrets.csv_files_path}/IN.xml", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=IN.xml"
+    respond_to do |format|
+      format.csv {
+        send_file "#{Rails.application.secrets.csv_files_path}/IN.csv", 
+          type: 'text/csv; charset=utf-8; header=present', 
+          disposition: "attachment; filename=IN.csv"
+      }
+      format.xml {
+        send_file "#{Rails.application.secrets.csv_files_path}/IN.xml", 
+          type: 'text/xml; charset=utf-8; header=present', 
+          disposition: "attachment; filename=IN.xml"
+      }
+    end
   end
 
 end

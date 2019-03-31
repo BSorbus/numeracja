@@ -3,8 +3,8 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:                 { source: "NdinTable.id" },
-      operator:           { source: "NdinTable.operator", cond: :eq },
-      operator_name:      { source: "NdinTable.operator_name" },
+      provider_id:        { source: "NdinTable.provider_id", cond: :eq },
+      provider_name:      { source: "NdinTable.provider_name" },
       service_type_name:  { source: "NdinTable.service_type_name" },
       scope:              { source: "NdinTable.scope", cond: filter_custom_column_condition },
       modification:       { source: "NdinTable.modification" }
@@ -16,8 +16,8 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:                 record.id,
         scope:              record.scope,
-        operator:           record.operator,
-        operator_name:      record.operator_name,
+        provider_id:        record.provider_id,
+        provider_name:      record.provider_name,
         service_type_name:  record.service_type_name,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }

@@ -2,14 +2,14 @@
 
 one:
   scope: MyString
-  operator: 1
-  operator_name: MyString
+  provider_id: 1
+  provider_name: MyString
   modification: 2019-03-19 01:24:05
   type: 
 
 two:
   scope: MyString
-  operator: 1
-  operator_name: MyString
+  provider_id: 1
+  provider_name: MyString
   modification: 2019-03-19 01:24:05
   type: 

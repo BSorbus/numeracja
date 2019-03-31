@@ -2,12 +2,12 @@
 
 one:
   number: 1
-  operator: 1
-  operator_name: MyString
+  provider_id: 1
+  provider_name: MyString
   modification: 2019-03-19 00:23:43
 
 two:
   number: 1
-  operator: 1
-  operator_name: MyString
+  provider_id: 1
+  provider_name: MyString
   modification: 2019-03-19 00:23:43

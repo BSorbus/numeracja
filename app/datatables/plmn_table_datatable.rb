@@ -3,8 +3,8 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
   def view_columns
     @view_columns ||= {
       id:                 { source: "PlmnTable.id" },
-      operator:           { source: "PlmnTable.operator", cond: :eq },
-      operator_name:      { source: "PlmnTable.operator_name" },
+      provider_id:        { source: "PlmnTable.provider_id", cond: :eq },
+      provider_name:      { source: "PlmnTable.provider_name" },
       scope_type:         { source: "PlmnTable.scope_type" },
       scope:              { source: "PlmnTable.scope", cond: filter_custom_column_condition },
       modification:       { source: "PlmnTable.modification" }
@@ -16,8 +16,8 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:                 record.id,
         scope:              record.scope,
-        operator:           record.operator,
-        operator_name:      record.operator_name,
+        provider_id:        record.provider_id,
+        provider_name:      record.provider_name,
         scope_type:         record.scope_type,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }

@@ -4,7 +4,7 @@ class PlmnTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :scope, :operator, :operator_name, :modification, :scope_type ]
+    columns = [ :scope, :provider_id, :provider_name, :modification, :scope_type ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/PLMN.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

@@ -88,8 +88,8 @@ $(document).ready(function() {
     columns: [
       { "data": "id", "visible": false }, 
       { "data": "number" }, 
-      { "data": "operator" },
-      { "data": "operator_name" },
+      { "data": "provider_id" },
+      { "data": "provider_name" },
       { "data": "location" },
       { "data": "modification" }
     ],

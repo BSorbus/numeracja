@@ -23,10 +23,10 @@
             <th>id</th>
             <th><%= NrnpTable.human_attribute_name(:routing_number) %></th>
             <th><%= NrnpTable.human_attribute_name(:routing_number_type) %></th>
-            <th><%= NrnpTable.human_attribute_name(:zone) %></th>
+            <th><%= NrnpTable.human_attribute_name(:zone_ab) %></th>
             <th><%= NrnpTable.human_attribute_name(:zone_symbol) %></th>
-            <th><%= NrnpTable.human_attribute_name(:operator) %></th>
-            <th><%= NrnpTable.human_attribute_name(:operator_name) %></th>
+            <th><%= NrnpTable.human_attribute_name(:provider_id) %></th>
+            <th><%= NrnpTable.human_attribute_name(:provider_name) %></th>
             <th><%= NrnpTable.human_attribute_name(:modification) %></th>
           </tr>
         </thead>
@@ -42,7 +42,7 @@
               <%= text_field_tag :col2filter, params[:col2filter], id: 'col2filter', 'data-column' => "2", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 3 zone -->
+            <th> <!-- 3 zone_ab -->
               <%= text_field_tag :col3filter, params[:col3filter], id: 'col3filter', 'data-column' => "3", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
@@ -50,11 +50,11 @@
               <%= text_field_tag :col4filter, params[:col4filter], id: 'col4filter', 'data-column' => "4", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 5 operator -->
+            <th> <!-- 5 provider_id -->
               <%= text_field_tag :col5filter, params[:col5filter], id: 'col5filter', 'data-column' => "5", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 6 operator_name -->
+            <th> <!-- 6 provider_name -->
               <%= text_field_tag :col6filter, params[:col6filter], id: 'col6filter', 'data-column' => "6", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>

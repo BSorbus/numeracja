@@ -10,15 +10,18 @@ class PlmnTablesController < ApplicationController
   end
 
   def export
-    send_file "#{Rails.application.secrets.csv_files_path}/PLMN.csv", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=PLMN.csv"
-  end
-
-  def export_xml
-    send_file "#{Rails.application.secrets.csv_files_path}/PLMN.xml", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=PLMN.xml"
+    respond_to do |format|
+      format.csv {
+        send_file "#{Rails.application.secrets.csv_files_path}/PLMN.csv", 
+          type: 'text/csv; charset=utf-8; header=present', 
+          disposition: "attachment; filename=PLMN.csv"
+      }
+      format.xml {
+        send_file "#{Rails.application.secrets.csv_files_path}/PLMN.xml", 
+          type: 'text/xml; charset=utf-8; header=present', 
+          disposition: "attachment; filename=PLMN.xml"
+      }
+    end
   end
 
 end

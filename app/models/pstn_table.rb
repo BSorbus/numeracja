@@ -4,7 +4,7 @@ class PstnTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :zone, :scope, :operator_name, :operator, :zone_name, :zone_symbol, :numbering_area, :modification ]
+    columns = [ :zone_ab, :scope, :provider_name, :provider_id, :zone_name, :zone_symbol, :numbering_area, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/PSTN.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

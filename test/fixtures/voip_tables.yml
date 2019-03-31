@@ -2,12 +2,12 @@
 
 one:
   scope: MyString
-  operator_name: MyString
-  operator: 1
+  provider_name: MyString
+  provider_id: 1
   change_date: 2019-03-19 01:52:14
 
 two:
   scope: MyString
-  operator_name: MyString
-  operator: 1
+  provider_name: MyString
+  provider_id: 1
   change_date: 2019-03-19 01:52:14

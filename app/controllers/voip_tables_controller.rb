@@ -10,15 +10,18 @@ class VoipTablesController < ApplicationController
   end
 
   def export
-    send_file "#{Rails.application.secrets.csv_files_path}/VOIP.csv", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=VOIP.csv"
-  end
-
-  def export_xml
-    send_file "#{Rails.application.secrets.csv_files_path}/VOIP.xml", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=VOIP.xml"
+    respond_to do |format|
+      format.csv {
+        send_file "#{Rails.application.secrets.csv_files_path}/VOIP.csv", 
+          type: 'text/csv; charset=utf-8; header=present', 
+          disposition: "attachment; filename=VOIP.csv"
+      }
+      format.xml {
+        send_file "#{Rails.application.secrets.csv_files_path}/VOIP.xml", 
+          type: 'text/xml; charset=utf-8; header=present', 
+          disposition: "attachment; filename=VOIP.xml"
+      }
+    end
   end
 
 end

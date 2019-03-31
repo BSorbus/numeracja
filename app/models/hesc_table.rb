@@ -4,7 +4,7 @@ class HescTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :number, :operator, :operator_name, :modification, :service_description, :entity_providing_services ]
+    columns = [ :number, :provider_id, :provider_name, :modification, :service_description, :entity_providing_services ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/HESC.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

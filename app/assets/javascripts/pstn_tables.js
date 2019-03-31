@@ -88,9 +88,9 @@ $(document).ready(function() {
     columns: [
       { "data": "id", "visible": false }, 
       { "data": "scope" }, 
-      { "data": "operator" },
-      { "data": "operator_name" },
-      { "data": "zone" }, 
+      { "data": "provider_id" },
+      { "data": "provider_name" },
+      { "data": "zone_ab" }, 
       { "data": "zone_name" }, 
       { "data": "zone_symbol" }, 
       { "data": "numbering_area" }, 

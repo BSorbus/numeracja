@@ -1,10 +1,10 @@
 class CreateNspcTables < ActiveRecord::Migration[5.2]
   def change
     create_table :nspc_tables do |t|
-      t.integer :zone,          index: true
+      t.integer :zone_ab,       index: true
       t.integer :number,        index: true
-      t.integer :operator,      index: true
-      t.string :operator_name,  index: true, default: ""
+      t.integer :provider_id,   index: true
+      t.string :provider_name,  index: true, default: ""
       t.datetime :modification, index: true
 
       #t.timestamps

@@ -4,8 +4,8 @@ class MncTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "MncTable.id" },
       number:             { source: "MncTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "MncTable.operator", cond: :eq },
-      operator_name:      { source: "MncTable.operator_name" },
+      provider_id:        { source: "MncTable.provider_id", cond: :eq },
+      provider_name:      { source: "MncTable.provider_name" },
       network:            { source: "MncTable.network" },
       modification:       { source: "MncTable.modification" }
     }
@@ -16,8 +16,8 @@ class MncTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:                 record.id,
         number:             record.number,
-        operator:           record.operator,
-        operator_name:      record.operator_name,
+        provider_id:        record.provider_id,
+        provider_name:      record.provider_name,
         network:            record.network,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }

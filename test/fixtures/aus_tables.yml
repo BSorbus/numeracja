@@ -2,18 +2,18 @@
 
 one:
   number: 1
-  operator: 1
-  operator_name: MyString
-  zone: 1
+  provider_id: 1
+  provider_name: MyString
+  zone_ab: 1
   zone_name: MyString
   zone_symbol: MyString
   modification: 2019-03-18 15:51:16
 
 two:
   number: 1
-  operator: 1
-  operator_name: MyString
-  zone: 1
+  provider_id: 1
+  provider_name: MyString
+  zone_ab: 1
   zone_name: MyString
   zone_symbol: MyString
   modification: 2019-03-18 15:51:16

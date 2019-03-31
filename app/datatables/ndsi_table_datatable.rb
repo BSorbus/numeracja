@@ -4,8 +4,8 @@ class NdsiTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "NdsiTable.id" },
       number:             { source: "NdsiTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "NdsiTable.operator", cond: :eq },
-      operator_name:      { source: "NdsiTable.operator_name" },
+      provider_id:        { source: "NdsiTable.provider_id", cond: :eq },
+      provider_name:      { source: "NdsiTable.provider_name" },
       number_type:        { source: "NdsiTable.number_type" },
       modification:       { source: "NdsiTable.modification" }
     }
@@ -16,8 +16,8 @@ class NdsiTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:                 record.id,
         number:             record.number,
-        operator:           record.operator,
-        operator_name:      record.operator_name,
+        provider_id:        record.provider_id,
+        provider_name:      record.provider_name,
         number_type:        record.number_type,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }

@@ -89,8 +89,8 @@ $(document).ready(function() {
       { "data": "id",
         "visible": false }, 
       { "data": "number" }, 
-      { "data": "operator" },
-      { "data": "operator_name" },
+      { "data": "provider_id" },
+      { "data": "provider_name" },
       { "data": "number_type" },
       { "data": "modification" }
     ],

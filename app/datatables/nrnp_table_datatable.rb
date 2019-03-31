@@ -5,10 +5,10 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
       id:                   { source: "NrnpTable.id" },
       routing_number:       { source: "NrnpTable.routing_number", cond: :like, searchable: true, orderable: true },
       routing_number_type:  { source: "NrnpTable.routing_number_type" },
-      zone:                 { source: "NrnpTable.zone", cond: :eq },
+      zone_ab:              { source: "NrnpTable.zone_ab", cond: :eq },
       zone_symbol:          { source: "NrnpTable.zone_symbol" },
-      operator:             { source: "NrnpTable.operator", cond: :eq },
-      operator_name:        { source: "NrnpTable.operator_name" },
+      provider_id:          { source: "NrnpTable.provider_id", cond: :eq },
+      provider_name:        { source: "NrnpTable.provider_name" },
       modification:         { source: "NrnpTable.modification" }
     }
   end
@@ -19,10 +19,10 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
         id:                   record.id,
         routing_number:       record.routing_number,
         routing_number_type:  record.routing_number_type,
-        zone:                 record.zone,
+        zone_ab:              record.zone_ab,
         zone_symbol:          record.zone_symbol,
-        operator:             record.operator,
-        operator_name:        record.operator_name,
+        provider_id:          record.provider_id,
+        provider_name:        record.provider_name,
         modification:         record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end

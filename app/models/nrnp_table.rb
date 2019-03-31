@@ -4,7 +4,7 @@ class NrnpTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :routing_number, :routing_number_type, :zone, :zone_symbol, :operator, :operator_name, :modification ]
+    columns = [ :routing_number, :routing_number_type, :zone_ab, :zone_symbol, :provider_id, :provider_name, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/NRNP.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 

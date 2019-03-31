@@ -35,4 +35,5 @@
 /config/deploy.rb
 
 /db/seeds/*.csv
+/db/seeds/*.xml
 /db/seeds/*.log

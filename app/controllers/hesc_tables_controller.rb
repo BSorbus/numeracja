@@ -10,17 +10,18 @@ class HescTablesController < ApplicationController
   end
 
   def export
-    send_file "#{Rails.application.secrets.csv_files_path}/HESC.csv", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=HESC.csv"
-  end
-
-  def export_xml
-    send_file "#{Rails.application.secrets.csv_files_path}/HESC.xml", 
-      type: 'text/csv; charset=utf-8; header=present', 
-      disposition: "attachment; filename=HESC.xml"
+    respond_to do |format|
+      format.csv {
+        send_file "#{Rails.application.secrets.csv_files_path}/HESC.csv", 
+          type: 'text/csv; charset=utf-8; header=present', 
+          disposition: "attachment; filename=HESC.csv"
+      }
+      format.xml {
+        send_file "#{Rails.application.secrets.csv_files_path}/HESC.xml", 
+          type: 'text/xml; charset=utf-8; header=present', 
+          disposition: "attachment; filename=HESC.xml"
+      }
+    end
   end
 
 end
-
-

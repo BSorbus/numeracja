@@ -22,8 +22,8 @@
           <tr>
             <th>id</th>
             <th><%= HescTable.human_attribute_name(:number) %></th>
-            <th><%= HescTable.human_attribute_name(:operator) %></th>
-            <th><%= HescTable.human_attribute_name(:operator_name) %></th>
+            <th><%= HescTable.human_attribute_name(:provider_id) %></th>
+            <th><%= HescTable.human_attribute_name(:provider_name) %></th>
             <th class="col-sm-5"><%= HescTable.human_attribute_name(:service_description) %></th>
             <th><%= HescTable.human_attribute_name(:entity_providing_services) %></th>
             <th><%= HescTable.human_attribute_name(:modification) %></th>
@@ -37,11 +37,11 @@
               <%= text_field_tag :col1filter, params[:col1filter], id: 'col1filter', 'data-column' => "1", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 2 operator -->
+            <th> <!-- 2 provider_id -->
               <%= text_field_tag :col2filter, params[:col2filter], id: 'col2filter', 'data-column' => "2", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 3 operator_name -->
+            <th> <!-- 3 provider_name -->
               <%= text_field_tag :col3filter, params[:col3filter], id: 'col3filter', 'data-column' => "3", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>

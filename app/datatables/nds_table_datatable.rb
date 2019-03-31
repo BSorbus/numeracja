@@ -4,8 +4,8 @@ class NdsTableDatatable < AjaxDatatablesRails::ActiveRecord
     @view_columns ||= {
       id:                 { source: "NdsTable.id" },
       number:             { source: "NdsTable.number", cond: :like, searchable: true, orderable: true },
-      operator:           { source: "NdsTable.operator", cond: :eq },
-      operator_name:      { source: "NdsTable.operator_name" },
+      provider_id:        { source: "NdsTable.provider_id", cond: :eq },
+      provider_name:      { source: "NdsTable.provider_name" },
       modification:       { source: "NdsTable.modification" }
     }
   end
@@ -15,8 +15,8 @@ class NdsTableDatatable < AjaxDatatablesRails::ActiveRecord
       {
         id:                 record.id,
         number:             record.number,
-        operator:           record.operator,
-        operator_name:      record.operator_name,
+        provider_id:        record.provider_id,
+        provider_name:      record.provider_name,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end

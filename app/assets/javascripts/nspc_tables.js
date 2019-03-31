@@ -87,10 +87,10 @@ $(document).ready(function() {
     lengthMenu: [[10, 15, 25, 50, 100], [10, 15, 25, 50, 100]],
     columns: [
       { "data": "id", "visible": false }, 
-      { "data": "zone" }, 
+      { "data": "zone_ab" }, 
       { "data": "number" }, 
-      { "data": "operator" },
-      { "data": "operator_name" },
+      { "data": "provider_id" },
+      { "data": "provider_name" },
       { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
