@@ -75,28 +75,28 @@ pl:
       title: 'TZN NDIN'
   nds_tables:
     index:
-      title_primary: 'Sieci provider_idów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       title: 'Tablica Zagospodarowania Numeracji dostępu do sieci NDS'
       navbar: 'TZN NDS'
     show:
       title: 'TZN NDS'
   ispc_tables:
     index:
-      title_primary: 'Sieci provider_idów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       title: 'Tablica Zagospodarowania Numeracji Międzynarodowych Punktów Sygnalizacyjnych ISPC'
       navbar: 'TZN ISPC'
     show:
       title: 'TZN ISPC'
   nspc_tables:
     index:
-      title_primary: 'Sieci provider_idów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       title: 'Tablica Zagospodarowania Numeracji Krajowych Punktów Sygnalizacyjnych NSPC'
       navbar: 'TZN NSPC'
     show:
       title: 'TZN NSPC'
   nds_ispc_nspc:
     index:
-      title_primary: 'Sieci provider_idów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
+      title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       navbar: 'TZN NDS, ISPC, NSPC'
   voip_tables:
     index:
