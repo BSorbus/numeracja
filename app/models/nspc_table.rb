@@ -16,9 +16,9 @@ class NspcTable < ApplicationRecord
 
       insert_to_buffer(row)                        
     end 
-    #AusTable.destroy_all
     ActiveRecord::Base.connection.execute("TRUNCATE nspc_tables RESTART IDENTITY")
     NspcTable.import columns, @buffer, validate: false    
+    buffer_to_xml(@buffer)   
   end
 
   private
@@ -31,6 +31,35 @@ class NspcTable < ApplicationRecord
         "#{current_row[3]}",
         "#{current_row[4]}"
       ]
+    end
+
+    def self.buffer_to_xml(data)
+      File.open("#{Rails.application.secrets.csv_files_path}/NSPC.xml", 'w+') do |f|
+        f.puts '<?xml version="1.0" encoding="UTF-8"?>'
+        f.puts '<table>'
+        f.puts    "\t<header>"
+        f.puts      "\t\t<title>TZN8</title>"
+        f.puts      "\t\t<date>#{Time.zone.now.strftime('%Y-%m-%d %H:%M:%S')}</date>"
+        f.puts    "\t</header>"
+        f.puts    "\t<numbers>"
+
+        data.each do |row|
+          f.puts        "\t\t<nspc>"
+          f.puts          "\t\t\t<zone>"
+          f.puts            "\t\t\t\t<ab>#{row[0]}</ab>"
+          f.puts          "\t\t\t</zone>"
+          f.puts          "\t\t\t<number>#{row[1]}</number>"
+          f.puts          "\t\t\t<provider>"
+          f.puts            "\t\t\t\t<ID>#{row[2]}</ID>"
+          f.puts            "\t\t\t\t<name>#{row[3]}</name>"
+          f.puts          "\t\t\t</provider>"
+          f.puts          "\t\t\t<modifyDate>#{row[4]}</modifyDate>"
+          f.puts        "\t\t</nspc>"
+        end
+
+        f.puts    "\t</numbers>"
+        f.puts "</table>"
+      end 
     end
 
 end

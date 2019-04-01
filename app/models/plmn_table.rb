@@ -16,9 +16,9 @@ class PlmnTable < ApplicationRecord
 
       insert_to_buffer(row)                        
     end 
-    #AusTable.destroy_all
     ActiveRecord::Base.connection.execute("TRUNCATE plmn_tables RESTART IDENTITY")
     PlmnTable.import columns, @buffer, validate: false    
+    buffer_to_xml(@buffer)   
   end
 
   private
@@ -31,6 +31,33 @@ class PlmnTable < ApplicationRecord
         "#{current_row[3]}",
         "#{current_row[4]}"
       ]
+    end
+
+    def self.buffer_to_xml(data)
+      File.open("#{Rails.application.secrets.csv_files_path}/PLMN.xml", 'w+') do |f|
+        f.puts '<?xml version="1.0" encoding="UTF-8"?>'
+        f.puts '<table>'
+        f.puts    "\t<header>"
+        f.puts      "\t\t<title>T2T9</title>"
+        f.puts      "\t\t<date>#{Time.zone.now.strftime('%Y-%m-%d %H:%M:%S')}</date>"
+        f.puts    "\t</header>"
+        f.puts    "\t<numbers>"
+
+        data.each do |row|
+          f.puts        "\t\t<plmn>"
+          f.puts          "\t\t\t<range>#{row[0]}</range>"
+          f.puts          "\t\t\t<provider>"
+          f.puts            "\t\t\t\t<ID>#{row[1]}</ID>"
+          f.puts            "\t\t\t\t<name>#{row[2]}</name>"
+          f.puts          "\t\t\t</provider>"
+          f.puts          "\t\t\t<kind>#{row[4]}</kind>"
+          f.puts          "\t\t\t<modifyDate>#{row[3]}</modifyDate>"
+          f.puts        "\t\t</plmn>"
+        end
+
+        f.puts    "\t</numbers>"
+        f.puts "</table>"
+      end 
     end
 
 end

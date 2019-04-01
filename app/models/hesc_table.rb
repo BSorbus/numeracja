@@ -16,9 +16,9 @@ class HescTable < ApplicationRecord
 
       insert_to_buffer(row)                        
     end 
-    #AusTable.destroy_all
     ActiveRecord::Base.connection.execute("TRUNCATE hesc_tables RESTART IDENTITY")
     HescTable.import columns, @buffer, validate: false    
+    buffer_to_xml(@buffer)
   end
 
   private
@@ -32,6 +32,36 @@ class HescTable < ApplicationRecord
         "#{current_row[4]}".to_s.gsub("\u0000", ''),
         "#{current_row[5]}".to_s.gsub("\u0000", '')
       ]
+    end
+
+    def self.buffer_to_xml(data)
+      File.open("#{Rails.application.secrets.csv_files_path}/HESC.xml", 'w+') do |f|
+        f.puts '<?xml version="1.0" encoding="UTF-8"?>'
+        f.puts '<table>'
+        f.puts    "\t<header>"
+        f.puts      "\t\t<title>T4T10</title>"
+        f.puts      "\t\t<date>#{Time.zone.now.strftime('%Y-%m-%d %H:%M:%S')}</date>"
+        f.puts    "\t</header>"
+        f.puts    "\t<numbers>"
+
+        data.each do |row|
+          f.puts        "\t\t<hesc>"
+          f.puts          "\t\t\t<number>#{row[0]}</number>"
+          f.puts          "\t\t\t<provider>"
+          f.puts            "\t\t\t\t<ID>#{row[1]}</ID>"
+          f.puts            "\t\t\t\t<name>#{row[2]}</name>"
+          f.puts          "\t\t\t</provider>"
+          f.puts          "\t\t\t<service>"
+          f.puts            "\t\t\t\t<name>#{row[5]}</name>"
+          f.puts            "\t\t\t\t<description>#{row[4]}</description>"
+          f.puts          "\t\t\t</service>"
+          f.puts          "\t\t\t<modifyDate>#{row[3]}</modifyDate>"
+          f.puts        "\t\t</hesc>"
+        end
+
+        f.puts    "\t</numbers>"
+        f.puts "</table>"
+      end 
     end
 
 end
