@@ -110,6 +110,7 @@ en:
     index:
       title: 'Register of premium rate service numbers'
       navbar: 'PRM'
+      url: 'http://bip.uke.gov.pl/rejestr-premium/'
   shared:
     basic_info:
       fieldset_title: 'Basic information'

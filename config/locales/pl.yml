@@ -110,8 +110,9 @@ pl:
       navbar: 'TZN NRNP'
   prm_tables:
     index:
-      title: 'Rejestr numerów wykorzystywanych do świadczenia usługi o podwyższone_abj opłacie'
+      title: 'Rejestr numerów wykorzystywanych do świadczenia usługi o podwyższonej opłacie'
       navbar: 'PRM'
+      url: 'http://bip.uke.gov.pl/rejestr-premium/'
   shared:
     basic_info:
       fieldset_title: 'Dane podstawowe'
