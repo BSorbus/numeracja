@@ -2,7 +2,7 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "PlmnTable.id" },
+      id:                 { source: "PlmnTable.id", searchable: false },
       provider_id:        { source: "PlmnTable.provider_id", cond: :eq },
       provider_name:      { source: "PlmnTable.provider_name" },
       scope_type:         { source: "PlmnTable.scope_type" },

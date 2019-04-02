@@ -2,7 +2,7 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                   { source: "NrnpTable.id" },
+      id:                   { source: "NrnpTable.id", searchable: false },
       routing_number:       { source: "NrnpTable.routing_number", cond: :like, searchable: true, orderable: true },
       routing_number_type:  { source: "NrnpTable.routing_number_type" },
       zone_ab:              { source: "NrnpTable.zone_ab", cond: :eq },

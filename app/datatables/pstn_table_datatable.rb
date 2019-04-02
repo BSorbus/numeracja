@@ -2,7 +2,7 @@ class PstnTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:             { source: "PstnTable.id" },
+      id:             { source: "PstnTable.id", searchable: false },
       provider_id:    { source: "PstnTable.provider_id", cond: :eq },
       provider_name:  { source: "PstnTable.provider_name" },
       zone_ab:        { source: "PstnTable.zone_ab", cond: :eq },

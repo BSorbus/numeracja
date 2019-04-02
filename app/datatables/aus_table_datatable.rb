@@ -2,7 +2,7 @@ class AusTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "AusTable.id" },
+      id:                 { source: "AusTable.id", searchable: false }, 
       number:             { source: "AusTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:        { source: "AusTable.provider_id", cond: :eq },
       provider_name:      { source: "AusTable.provider_name" },

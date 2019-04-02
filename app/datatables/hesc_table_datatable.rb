@@ -2,7 +2,7 @@ class HescTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                         { source: "HescTable.id" },
+      id:                         { source: "HescTable.id", searchable: false },
       number:                     { source: "HescTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:                { source: "HescTable.provider_id", cond: :eq },
       provider_name:              { source: "HescTable.provider_name" },

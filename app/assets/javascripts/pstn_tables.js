@@ -18,11 +18,18 @@ $(document).ready(function() {
         //dt.button( 4 ).text('Filtrowanie...');
         dt.button( 3 ).text('<span class="fa fa-eye"></span>');
         dt.button( 3 ).active( true );
+        // Redraw table (and reset main search filter)
+        $($.fn.dataTable.tables(true)).DataTable().search("").draw();
+        $(".dataTables_filter").hide();
       } else {
         $('#pstn_tables-datatable').DataTable().tables().footer().to$().css('display', 'none');
         //dt.button( 4 ).text('Filtr');
         dt.button( 3 ).text('<span class="fa fa-eye-slash"></span>');
         dt.button( 3 ).active( false );
+        // Reset Column filtering
+        $('#pstn_tables-datatable tfoot input').val('').keyup();
+
+        $(".dataTables_filter").show();
       }
 
       $($.fn.dataTable.tables(true)).DataTable()

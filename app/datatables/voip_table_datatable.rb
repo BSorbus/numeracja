@@ -2,7 +2,7 @@ class VoipTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:             { source: "VoipTable.id" },
+      id:             { source: "VoipTable.id", searchable: false },
       provider_id:    { source: "VoipTable.provider_id", cond: :eq },
       provider_name:  { source: "VoipTable.provider_name" },
       scope:          { source: "VoipTable.scope", cond: filter_custom_column_condition },

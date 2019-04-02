@@ -18,11 +18,18 @@ $(document).ready(function() {
         //dt.button( 4 ).text('Filtrowanie...');
         dt.button( 3 ).text('<span class="fa fa-eye"></span>');
         dt.button( 3 ).active( true );
+        // Redraw table (and reset main search filter)
+        $($.fn.dataTable.tables(true)).DataTable().search("").draw();
+        $(".dataTables_filter").hide();
       } else {
         $('#hesc_tables-datatable').DataTable().tables().footer().to$().css('display', 'none');
         //dt.button( 4 ).text('Filtr');
         dt.button( 3 ).text('<span class="fa fa-eye-slash"></span>');
         dt.button( 3 ).active( false );
+        // Reset Column filtering
+        $('#hesc_tables-datatable tfoot input').val('').keyup();
+
+        $(".dataTables_filter").show();
       }
 
       $($.fn.dataTable.tables(true)).DataTable()
@@ -86,8 +93,7 @@ $(document).ready(function() {
     pagingType: "full_numbers",
     lengthMenu: [[10, 15, 25, 50, 100], [10, 15, 25, 50, 100]],
     columns: [
-      { "data": "id",
-        "visible": false }, 
+      { "data": "id", "visible": false }, 
       { "data": "number" }, 
       { "data": "provider_id" },
       { "data": "provider_name" },

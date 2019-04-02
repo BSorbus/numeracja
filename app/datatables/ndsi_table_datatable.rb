@@ -2,7 +2,7 @@ class NdsiTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "NdsiTable.id" },
+      id:                 { source: "NdsiTable.id", searchable: false },
       number:             { source: "NdsiTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:        { source: "NdsiTable.provider_id", cond: :eq },
       provider_name:      { source: "NdsiTable.provider_name" },

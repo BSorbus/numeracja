@@ -2,7 +2,7 @@ class IspcTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "IspcTable.id" },
+      id:                 { source: "IspcTable.id", searchable: false },
       number:             { source: "IspcTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:        { source: "IspcTable.provider_id", cond: :eq },
       provider_name:      { source: "IspcTable.provider_name" },

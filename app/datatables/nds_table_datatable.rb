@@ -2,7 +2,7 @@ class NdsTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "NdsTable.id" },
+      id:                 { source: "NdsTable.id", searchable: false },
       number:             { source: "NdsTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:        { source: "NdsTable.provider_id", cond: :eq },
       provider_name:      { source: "NdsTable.provider_name" },

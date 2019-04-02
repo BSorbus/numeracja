@@ -2,7 +2,7 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "NdinTable.id" },
+      id:                 { source: "NdinTable.id", searchable: false },
       provider_id:        { source: "NdinTable.provider_id", cond: :eq },
       provider_name:      { source: "NdinTable.provider_name" },
       service_type_name:  { source: "NdinTable.service_type_name" },

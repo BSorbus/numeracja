@@ -2,7 +2,7 @@ class NspcTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "NspcTable.id" },
+      id:                 { source: "NspcTable.id", searchable: false },
       zone_ab:            { source: "NspcTable.zone_ab", cond: :eq },
       number:             { source: "NspcTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:        { source: "NspcTable.provider_id", cond: :eq },

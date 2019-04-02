@@ -2,7 +2,7 @@ class MncTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   def view_columns
     @view_columns ||= {
-      id:                 { source: "MncTable.id" },
+      id:                 { source: "MncTable.id", searchable: false },
       number:             { source: "MncTable.number", cond: :like, searchable: true, orderable: true },
       provider_id:        { source: "MncTable.provider_id", cond: :eq },
       provider_name:      { source: "MncTable.provider_name" },
