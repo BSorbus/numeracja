@@ -156,7 +156,7 @@ en:
         network: 'Network'
         modification: 'Modification date'
       ndin_table:
-        scope: 'Scope'
+        scope: 'Range (number)'
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
         service_type_name: 'Service type name'
@@ -187,14 +187,14 @@ en:
         provider_name: 'Provider (name)'
         modification: 'Modification date'
       plmn_table:
-        scope: 'Scope (number)'
+        scope: 'Range (number)'
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
         modification: 'Modification date'
         scope_type: 'Type'
       pstn_table:
         zone_ab: 'Zone (AB)'
-        scope: 'Scope (number)'
+        scope: 'Range (number)'
         provider_name: 'Provider (name)'
         provider_id: 'Provider (ID)'
         zone_name: 'Zone (name)'
@@ -202,7 +202,7 @@ en:
         numbering_area: 'Numbering area'
         modification: 'Modification date'
       voip_table:
-        scope: 'Scope (number)'
+        scope: 'Range (number)'
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
         modification: 'Modification date'

@@ -158,7 +158,7 @@ pl:
         network: 'Śieć'
         modification: 'Data modyfikacji'
       ndin_table:
-        scope: 'Zakres'
+        scope: 'Zakres (numer)'
         provider_id: 'Operator (ID)'
         provider_name: 'Operator (nazwa)'
         service_type_name: 'Nazwa typu uslugi'
