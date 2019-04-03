@@ -51,7 +51,7 @@ class NspcTable < ApplicationRecord
           f.puts          "\t\t\t<number>#{row[1]}</number>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[2]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[3]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[3]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<modifyDate>#{row[4]}</modifyDate>"
           f.puts        "\t\t</nspc>"

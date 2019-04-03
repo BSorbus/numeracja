@@ -55,7 +55,7 @@ class NrnpTable < ApplicationRecord
           f.puts          "\t\t\t</zone>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[4]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[5]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[5]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<modifyDate>#{row[6]}</modifyDate>"
           f.puts        "\t\t</nrnp>"

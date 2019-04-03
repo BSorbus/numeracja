@@ -47,7 +47,7 @@ class NdsTable < ApplicationRecord
           f.puts          "\t\t\t<number>#{row[0]}</number>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[1]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[2]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[2]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<modifyDate>#{row[3]}</modifyDate>"
           f.puts        "\t\t</nds>"

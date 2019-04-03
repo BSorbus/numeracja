@@ -49,7 +49,7 @@ class HescTable < ApplicationRecord
           f.puts          "\t\t\t<number>#{row[0]}</number>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[1]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[2]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[2]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<service>"
           f.puts            "\t\t\t\t<name>#{row[5]}</name>"

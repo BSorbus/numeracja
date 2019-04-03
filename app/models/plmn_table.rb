@@ -48,7 +48,7 @@ class PlmnTable < ApplicationRecord
           f.puts          "\t\t\t<range>#{row[0]}</range>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[1]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[2]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[2]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<kind>#{row[4]}</kind>"
           f.puts          "\t\t\t<modifyDate>#{row[3]}</modifyDate>"

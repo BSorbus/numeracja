@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
 
   create_table "nspc_tables", force: :cascade do |t|
     t.integer "zone_ab"
-    t.integer "number"
+    t.string "number"
     t.integer "provider_id"
     t.string "provider_name", default: ""
     t.datetime "modification"

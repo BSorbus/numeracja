@@ -56,7 +56,7 @@ class PstnTable < ApplicationRecord
           f.puts          "\t\t\t</zone>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[3]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[2]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[2]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<numberArea>#{row[6]}</numberArea>"
           f.puts          "\t\t\t<modifyDate>#{row[7]}</modifyDate>"

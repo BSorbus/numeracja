@@ -29,9 +29,18 @@ class VoipTableDatatable < AjaxDatatablesRails::ActiveRecord
 
   # def filter_custom_column_condition
   #   ->(column, value) { 
-  #     ::Arel::Nodes::SqlLiteral.new(" scope LIKE '#{ value }%' ") 
+  #     # ::Arel::Nodes::SqlLiteral.new(" scope LIKE '#{ value }%' ")
+  #     #car[:type].eq("electric").or(car[:description].matches("%hybrid%"))
+  #     #::Arel::Nodes::SqlLiteral.new(column.field.to_s).matches("#{ value }%") 
+  #     ::Arel.sql("'#{value}'").regexp_matches("'^' || replace(replace(replace(scope, '(', '['), ',', ''), ')', ']')  || '[0-9]*$'", right)
+  #     .and( 
+  #       Arel.sql("scope").matches("#{ value }%").and(
+  #         Arel.sql("length('#{value}') <= 9")
+  #         ) 
+  #       )
   #   }
   # end
+
 
   def filter_custom_column_condition
     ->(column, value) { 

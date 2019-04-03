@@ -48,7 +48,7 @@ class NdinTable < ApplicationRecord
           f.puts          "\t\t\t<range>#{row[0]}</range>"
           f.puts          "\t\t\t<provider>"
           f.puts            "\t\t\t\t<ID>#{row[2]}</ID>"
-          f.puts            "\t\t\t\t<name>#{row[1]}</name>"
+          f.puts            "\t\t\t\t<name><![CDATA[#{row[1]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<serviceType>#{row[3]}</serviceType>"
           f.puts          "\t\t\t<modifyDate>#{row[4]}</modifyDate>"
