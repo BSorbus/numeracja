@@ -18,8 +18,11 @@ pl:
   static_pages:
     home:
       title: 'Tablice Zagospodarowania Numeracji'
-    info:
+    home_sub:
       title: 'Zbiorcze zestawienia numeracji przydzielonej przedsiębiorcom telekomunikacyjnym, zgodnie z Planem numeracji krajowej dla publicznych sieci telekomunikacyjnych'
+    info:
+      title: 'Informacje'
+      navbar: 'Informacje'
   pstn_tables:
     index:
       title_primary: 'Stacjonarne publiczne sieci telekomunikacyjne'
