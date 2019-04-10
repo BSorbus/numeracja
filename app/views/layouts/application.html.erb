@@ -6,6 +6,8 @@
     <title><%= content_for?(:title) ? yield(:title) : "UKE Numeracja" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "UKE Numeracja" %>">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -16,8 +18,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <%= piwik_tracking_tag %>
-
-    <%= yield(:javascript) %> 
   </head>
 
   <body>
