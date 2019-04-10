@@ -184,6 +184,7 @@ pl:
         zone_symbol: 'Strefa (symbol)'
         provider_id: 'Operator (ID)'
         provider_name: 'Operator (nazwa)'
+        numbering_area: 'Obszar'
         modification: 'Data modyfikacji'
       nspc_table:
         zone_ab: 'Strefa (AB)'

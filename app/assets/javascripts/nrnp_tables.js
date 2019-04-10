@@ -96,6 +96,7 @@ $(document).ready(function() {
       { "data": "zone_symbol" }, 
       { "data": "provider_id" },
       { "data": "provider_name" },
+      { "data": "numbering_area" },
       { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],

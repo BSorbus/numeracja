@@ -7,6 +7,7 @@ class CreateNrnpTables < ActiveRecord::Migration[5.2]
       t.string :zone_symbol,          index: true, default: ""
       t.integer :provider_id,         index: true
       t.string :provider_name,        index: true, default: ""
+      t.string :numbering_area,       index: true, default: ""
       t.datetime :modification,       index: true
 
       #t.timestamps

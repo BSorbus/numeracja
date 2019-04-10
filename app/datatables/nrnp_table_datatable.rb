@@ -9,6 +9,7 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
       zone_symbol:          { source: "NrnpTable.zone_symbol" },
       provider_id:          { source: "NrnpTable.provider_id", cond: :eq },
       provider_name:        { source: "NrnpTable.provider_name" },
+      numbering_area:       { source: "NrnpTable.numbering_area" },
       modification:         { source: "NrnpTable.modification" }
     }
   end
@@ -23,6 +24,7 @@ class NrnpTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone_symbol:          record.zone_symbol,
         provider_id:          record.provider_id,
         provider_name:        record.provider_name,
+        numbering_area:       record.numbering_area,
         modification:         record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end

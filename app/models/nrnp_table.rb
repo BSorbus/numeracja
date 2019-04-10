@@ -4,7 +4,7 @@ class NrnpTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :routing_number, :routing_number_type, :zone_ab, :zone_symbol, :provider_id, :provider_name, :modification ]
+    columns = [ :routing_number, :routing_number_type, :zone_ab, :zone_symbol, :provider_id, :provider_name, :numbering_area, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/NRNP.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 
@@ -31,7 +31,8 @@ class NrnpTable < ApplicationRecord
         "#{current_row[3]}",
         "#{current_row[4]}",
         "#{current_row[5]}",
-        "#{current_row[6]}"
+        "#{current_row[6]}",
+        "#{current_row[7]}"
       ]
     end
 
@@ -57,7 +58,8 @@ class NrnpTable < ApplicationRecord
           f.puts            "\t\t\t\t<ID>#{row[4]}</ID>"
           f.puts            "\t\t\t\t<name><![CDATA[#{row[5]}]]></name>"
           f.puts          "\t\t\t</provider>"
-          f.puts          "\t\t\t<modifyDate>#{row[6]}</modifyDate>"
+          f.puts          "\t\t\t<area>#{row[6]}</area>"
+          f.puts          "\t\t\t<modifyDate>#{row[7]}</modifyDate>"
           f.puts        "\t\t</nrnp>"
         end
 

@@ -27,6 +27,7 @@
             <th><%= NrnpTable.human_attribute_name(:zone_symbol) %></th>
             <th><%= NrnpTable.human_attribute_name(:provider_id) %></th>
             <th><%= NrnpTable.human_attribute_name(:provider_name) %></th>
+            <th><%= NrnpTable.human_attribute_name(:numbering_area) %></th>
             <th><%= NrnpTable.human_attribute_name(:modification) %></th>
           </tr>
         </thead>
@@ -56,6 +57,10 @@
             </th>
             <th> <!-- 6 provider_name -->
               <%= text_field_tag :col6filter, params[:col6filter], id: 'col6filter', 'data-column' => "6", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 7 numbering_area -->
+              <%= text_field_tag :col7filter, params[:col7filter], id: 'col7filter', 'data-column' => "7", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
             <th></th>
