@@ -33,15 +33,11 @@ en:
       title_primary: 'Mobile public telecommunications networks'
       title: 'Numbering Management Table for mobile public telecommunications network (PLMN)'
       navbar: 'TZN PLMN'
-    show:
-      title: 'TZN PLMN'
   mnc_tables:
     index:
       title_primary: 'Mobile public telecommunications networks'
       title: 'Table of mobile network codes (MNC)'
       navbar: 'TZN MNC'
-    show:
-      title: 'TZN MNC'
   plmn_mnc:
     index:
       title_primary: 'Mobile public telecommunications networks'
@@ -51,50 +47,36 @@ en:
       title_primary: 'IT networks (Internet)'
       title: 'Numbering Management Table of IT network access numbers (NDSI)'
       navbar: 'TZN NDSI'
-    show:
-      title: 'TZN NDSI'
   aus_tables:
     index:
       title_primary: 'Numbers for special subscriber services (AUS)'
       title: 'Numbering Management Table of special subscriber services AUS (5D)'
       navbar: 'TZN AUS'
-    show:
-      title: 'TZN AUS'
   hesc_tables:
     index:
       title_primary: 'Numbering for special subscriber services and harmonized services of social value'
       title: 'Numbering Tables of Harmonised European Short Codes (HESC) for ranges 116 and 118'
       navbar: 'TZN HESC'
-    show:
-      title: 'TZN HESC'
   ndin_tables:
     index:
       title_primary: 'Intelligent networks (70, 80)'
       title: 'Numbering Management Table of access numbers to intelligent network services (IN)'
       navbar: 'TZN NDIN'
-    show:
-      title: 'TZN NDIN'
   nds_tables:
     index:
       title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
       title: 'Numbering Management Table of network access numbers (NDS)'
       navbar: 'TZN NDS'
-    show:
-      title: 'TZN NDS'
   ispc_tables:
     index:
       title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
       title: 'Numbering Management Table of international signaling point codes (ISPC)'
       navbar: 'TZN ISPC'
-    show:
-      title: 'TZN ISPC'
   nspc_tables:
     index:
       title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
       title: 'Numbering Management Table of national signaling point codes (NSPC)'
       navbar: 'TZN NSPC'
-    show:
-      title: 'TZN NSPC'
   nds_ispc_nspc:
     index:
       title_primary: 'Networks of operators of long-distance and international services and calls from fixed to mobile networks'
@@ -182,7 +164,7 @@ en:
         zone_symbol: 'Zone (symbol)'
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
-        numbering_area: 'Area'
+        numbering_area: 'Area of ​​use (SN)'
         modification: 'Modification date'
       nspc_table:
         zone_ab: 'Zone (AB)'

@@ -28,22 +28,16 @@ pl:
       title_primary: 'Stacjonarne publiczne sieci telekomunikacyjne'
       title: 'Tablica Zagospodarowania Numeracji abonenckiej dla stacjonarnej publicznej sieci telekomunikacyjnej PSTN'
       navbar: 'TZN PSTN'
-    show:
-      title: 'TZN PLMN'
   plmn_tables:
     index:
       title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
       title: 'Tablica Zagospodarowania Numeracji abonenckiej dla ruchomej publicznej sieci telekomunikacyjnej PLMN'
       navbar: 'TZN PLMN'
-    show:
-      title: 'TZN PLMN'
   mnc_tables:
     index:
       title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
       title: 'Tablica Zagospodarowania kodów sieci ruchomej MNC'
       navbar: 'TZN MNC'
-    show:
-      title: 'TZN MNC'
   plmn_mnc:
     index:
       title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
@@ -53,50 +47,36 @@ pl:
       title_primary: 'Sieci teleinformatyczne (Internet)'
       title: 'Tablica Zagospodarowania Numeracji dostępu do sieci teleinformatycznych NDSI'
       navbar: 'TZN NDSI'
-    show:
-      title: 'TZN NDSI'
   aus_tables:
     index:
       title_primary: 'Numery abonenckich usług specjalnych (AUS)'
       title: 'Tablica Zagospodarowania Numeracji abonenckich usług specjalnych AUS (5D)'
       navbar: 'TZN AUS'
-    show:
-      title: 'TZN AUS'
   hesc_tables:
     index:
       title_primary: 'Numeracja abonenckich usług specjalnych oraz zharmonizowanych usług o walorze społecznym'
       title: 'Tablice numeracji HESC z zakresu 116 i 118'
       navbar: 'TZN HESC'
-    show:
-      title: 'TZN HESC'
   ndin_tables:
     index:
       title_primary: 'Sieci inteligentne (70, 80)'
       title: 'Tablica Zagospodarowania Numeracji dostępu do usług sieci inteligentnych IN'
       navbar: 'TZN NDIN'
-    show:
-      title: 'TZN NDIN'
   nds_tables:
     index:
       title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       title: 'Tablica Zagospodarowania Numeracji dostępu do sieci NDS'
       navbar: 'TZN NDS'
-    show:
-      title: 'TZN NDS'
   ispc_tables:
     index:
       title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       title: 'Tablica Zagospodarowania Numeracji Międzynarodowych Punktów Sygnalizacyjnych ISPC'
       navbar: 'TZN ISPC'
-    show:
-      title: 'TZN ISPC'
   nspc_tables:
     index:
       title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
       title: 'Tablica Zagospodarowania Numeracji Krajowych Punktów Sygnalizacyjnych NSPC'
       navbar: 'TZN NSPC'
-    show:
-      title: 'TZN NSPC'
   nds_ispc_nspc:
     index:
       title_primary: 'Sieci operatorów usług międzystrefowych i międzynarodowych oraz połączeń z sieci stacjonarnej do sieci komórkowej'
@@ -184,7 +164,7 @@ pl:
         zone_symbol: 'Strefa (symbol)'
         provider_id: 'Operator (ID)'
         provider_name: 'Operator (nazwa)'
-        numbering_area: 'Obszar'
+        numbering_area: 'Obszar wykorzystywania (SN)'
         modification: 'Data modyfikacji'
       nspc_table:
         zone_ab: 'Strefa (AB)'
