@@ -164,7 +164,7 @@ en:
         zone_symbol: 'Zone (symbol)'
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
-        numbering_area: 'Area of ​​use (SN)'
+        numbering_area: 'Area of ​​use (zone)'
         modification: 'Modification date'
       nspc_table:
         zone_ab: 'Zone (AB)'
