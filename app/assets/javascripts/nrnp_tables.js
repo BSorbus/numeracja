@@ -26,6 +26,10 @@ $(document).ready(function() {
         //dt.button( 4 ).text('Filtr');
         dt.button( 3 ).text('<span class="fa fa-eye-slash"></span>');
         dt.button( 3 ).active( false );
+        // Reset Column filtering
+        $('#nrnp_tables-datatable tfoot input').val('').keyup();
+
+        $(".dataTables_filter").show();
       }
 
       $($.fn.dataTable.tables(true)).DataTable()
