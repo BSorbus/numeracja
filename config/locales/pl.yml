@@ -95,7 +95,7 @@ pl:
     index:
       title: 'Rejestr numerów wykorzystywanych do świadczenia usługi o podwyższonej opłacie'
       navbar: 'PRM'
-      url: 'http://bip.uke.gov.pl/rejestr-premium/'
+      url: 'http://bip.uke.gov.pl/wyszukiwarka-rejestr-premium'
   shared:
     basic_info:
       fieldset_title: 'Dane podstawowe'
