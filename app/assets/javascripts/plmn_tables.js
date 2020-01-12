@@ -97,7 +97,6 @@ $(document).ready(function() {
       { "data": "scope" }, 
       { "data": "provider_id" },
       { "data": "provider_name" },
-      { "data": "scope_type" }, 
       { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],

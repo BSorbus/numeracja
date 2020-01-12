@@ -24,7 +24,6 @@
             <th><%= PlmnTable.human_attribute_name(:scope) %></th>
             <th><%= PlmnTable.human_attribute_name(:provider_id) %></th>
             <th><%= PlmnTable.human_attribute_name(:provider_name) %></th>
-            <th><%= PlmnTable.human_attribute_name(:scope_type) %></th>
             <th><%= PlmnTable.human_attribute_name(:modification) %></th>
           </tr>
         </thead>
@@ -42,10 +41,6 @@
             </th>
             <th> <!-- 3 provider_name -->
               <%= text_field_tag :col3filter, params[:col3filter], id: 'col3filter', 'data-column' => "3", 
-                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
-            </th>
-            <th> <!-- 4 scope_type -->
-              <%= text_field_tag :col4filter, params[:col4filter], id: 'col4filter', 'data-column' => "4", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
             <th></th>

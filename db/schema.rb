@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_19_005214) do
+ActiveRecord::Schema.define(version: 2020_01_12_192438) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -147,12 +147,10 @@ ActiveRecord::Schema.define(version: 2019_03_19_005214) do
     t.integer "provider_id"
     t.string "provider_name", default: ""
     t.datetime "modification"
-    t.string "scope_type", default: ""
     t.index ["modification"], name: "index_plmn_tables_on_modification"
     t.index ["provider_id"], name: "index_plmn_tables_on_provider_id"
     t.index ["provider_name"], name: "index_plmn_tables_on_provider_name"
     t.index ["scope"], name: "index_plmn_tables_on_scope"
-    t.index ["scope_type"], name: "index_plmn_tables_on_scope_type"
   end
 
   create_table "pstn_tables", force: :cascade do |t|

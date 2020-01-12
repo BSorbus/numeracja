@@ -4,7 +4,7 @@ class PlmnTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :scope, :provider_id, :provider_name, :modification, :scope_type ]
+    columns = [ :scope, :provider_id, :provider_name, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/PLMN.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 
@@ -28,8 +28,7 @@ class PlmnTable < ApplicationRecord
         "#{current_row[0]}",
         "#{current_row[1]}", 
         "#{current_row[2]}",
-        "#{current_row[3]}",
-        "#{current_row[4]}"
+        "#{current_row[3]}"
       ]
     end
 
@@ -50,7 +49,6 @@ class PlmnTable < ApplicationRecord
           f.puts            "\t\t\t\t<ID>#{row[1]}</ID>"
           f.puts            "\t\t\t\t<name><![CDATA[#{row[2]}]]></name>"
           f.puts          "\t\t\t</provider>"
-          f.puts          "\t\t\t<kind>#{row[4]}</kind>"
           f.puts          "\t\t\t<modifyDate>#{row[3]}</modifyDate>"
           f.puts        "\t\t</plmn>"
         end

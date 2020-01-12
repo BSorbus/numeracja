@@ -5,7 +5,6 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
       id:                 { source: "PlmnTable.id", searchable: false },
       provider_id:        { source: "PlmnTable.provider_id", cond: :eq },
       provider_name:      { source: "PlmnTable.provider_name" },
-      scope_type:         { source: "PlmnTable.scope_type" },
       scope:              { source: "PlmnTable.scope", cond: filter_custom_column_condition },
       modification:       { source: "PlmnTable.modification" }
     }
@@ -18,7 +17,6 @@ class PlmnTableDatatable < AjaxDatatablesRails::ActiveRecord
         scope:              record.scope,
         provider_id:        record.provider_id,
         provider_name:      record.provider_name,
-        scope_type:         record.scope_type,
         modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
