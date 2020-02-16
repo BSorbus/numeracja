@@ -12,6 +12,7 @@ $(document).ready(function() {
     //text: 'Filtr',
     text: '<span class="fa fa-eye-slash"></span>',
     titleAttr: 'Filtr',
+    className: 'btn btn-sm btn-default',
     action: function ( e, dt, node, config ) {
       if ($('#voip_tables-datatable').DataTable().tables().footer().to$().css('display') === 'none') {
         $('#voip_tables-datatable').DataTable().tables().footer().to$().css('display', 'table-row-group');
@@ -41,7 +42,7 @@ $(document).ready(function() {
   $.fn.dataTable.ext.buttons.voip_tables_export_csv = {
     text: '<span class="fa fa-file-csv"></span>',
     titleAttr: 'Export CSV',
-    className: 'btn btn-default',
+    className: 'btn btn-sm btn-default',
     action: function ( e, dt, button, config ) {
       window.location = $('#voip_tables-datatable').data('export_csv_url');
     }  
@@ -50,7 +51,7 @@ $(document).ready(function() {
   $.fn.dataTable.ext.buttons.voip_tables_export_xml = {
     text: '<span class="fa fa-file-code"></span>',
     titleAttr: 'Export XML',
-    className: 'btn btn-default',
+    className: 'btn btn-sm btn-default',
     action: function ( e, dt, button, config ) {
       window.location = $('#voip_tables-datatable').data('export_xml_url');
     }  
@@ -58,7 +59,9 @@ $(document).ready(function() {
 
 
   var oVoipTable = $('#voip_tables-datatable').DataTable({
-    dom: 'lBfrtip',
+//    dom: 'lBfrtip',
+//    dom: "<'row'<'col-sm-6'l><'col-sm-6'Bf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+    dom: '<"top" <"row" <"col-sm-6" <"pull-left"l><"pull-left"B> > <"col-sm-6 pull-right"f> > > rt <"bottom"ip><"clear">',
     buttons: [
       'voip_tables_export_csv',
       'voip_tables_export_xml',
@@ -66,6 +69,7 @@ $(document).ready(function() {
         extend:    'colvis',
         text:      '<span class="fa fa-columns"></span>',
         titleAttr: 'Columns show/hide',
+        className: 'btn btn-sm btn-default',
         columns:   ':gt(0)' //exclude first col from list
       }, 
       'voip_tables_button_filter_show_hide'
