@@ -31,6 +31,9 @@ $(document).ready(function() {
         // Reset Column filtering
         $('#aus_tables-datatable tfoot input').val('').keyup();
 
+  //    $(".dataTables_filter input").attr('placeholder','szukaj...');
+  //    $(".dataTables_filter input").attr('placeholder','szukaj...').css({'width':'350px','display':'inline-block'});
+
         $(".dataTables_filter").show();
       }
 
@@ -112,6 +115,11 @@ $(document).ready(function() {
       //url: $('#aus_tables-datatable').data('locale') "<%= Rails.application.routes.url_helpers.datatables_lang_path(locale: I18n.locale, format: :json) %>"
       url: $('#aus_tables-datatable').data('locale_url')
     }
+    // initComplete: function () {
+    //   $('.dataTables_filter input[type="search"]').attr('placeholder','szukaj...').css({ 'width': '200px', 'display': 'inline-block' });
+    //   //$('.dataTables_filter input[type="search"]').css({ 'width': '200px', 'display': 'inline-block' });
+    //   //$('.dataTables_filter input[type="search"]').addClass('form-control input-sm col-xs-6');
+    // }
   });
  
  
