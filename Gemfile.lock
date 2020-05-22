@@ -118,7 +118,7 @@ GEM
       actionpack
       activesupport
       rails (>= 3.0.0)
-    puma (4.3.3)
+    puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-attack (6.2.2)
@@ -239,7 +239,7 @@ DEPENDENCIES
   mina-whenever
   pg (>= 0.18, < 2.0)
   piwik_analytics
-  puma (~> 4.3.3)
+  puma (~> 4.3.5)
   rack-attack
   rails (~> 5.2.4.2)
   redis (~> 4.0)
