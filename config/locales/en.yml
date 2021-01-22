@@ -20,9 +20,9 @@ en:
       title: 'Numbering Management Tables'
     home_sub:
       title: 'Aggregate numbering lists assigned to telecommunications undertakings in accordance with the National Numbering Plan for Public Telephone Networks'
-    info:
-      title: 'Information'
-      navbar: 'Information'
+    declaration:
+      title: 'Accessibility declaration'
+      navbar: 'Accessibility declaration'
   pstn_tables:
     index:
       title_primary: 'Fixed public telecommunications networks'

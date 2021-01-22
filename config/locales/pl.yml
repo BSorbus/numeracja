@@ -20,9 +20,9 @@ pl:
       title: 'Tablice Zagospodarowania Numeracji'
     home_sub:
       title: 'Zbiorcze zestawienia numeracji przydzielonej przedsiębiorcom telekomunikacyjnym, zgodnie z Planem numeracji krajowej dla publicznych sieci telekomunikacyjnych'
-    info:
-      title: 'Informacje'
-      navbar: 'Informacje'
+    declaration:
+      title: 'Deklaracja dostępności'
+      navbar: 'Deklaracja dostępności'
   pstn_tables:
     index:
       title_primary: 'Stacjonarne publiczne sieci telekomunikacyjne'
