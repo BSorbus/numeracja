@@ -117,6 +117,7 @@ en:
         number: 'Number'
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
+        service_description: 'Service description'
         zone_ab: 'Zone (AB)'
         zone_name: 'Zone (name)'
         zone_symbol: 'Zone (symbol)'

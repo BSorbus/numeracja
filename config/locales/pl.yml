@@ -117,6 +117,7 @@ pl:
         number: 'Numer'
         provider_id: 'Operator (ID)'
         provider_name: 'Operator (nazwa)'
+        service_description: 'Opis usługi'
         zone_ab: 'Strefa (AB)'
         zone_name: 'Strefa (nazwa)'
         zone_symbol: 'Strefa (symbol)'

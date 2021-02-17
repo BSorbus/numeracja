@@ -4,7 +4,7 @@ class AusTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :number, :provider_id, :provider_name, :zone_ab, :zone_name, :zone_symbol, :modification ]
+    columns = [ :number, :provider_id, :provider_name, :service_description, :zone_ab, :zone_name, :zone_symbol, :modification ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/AUS.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 
@@ -32,7 +32,8 @@ class AusTable < ApplicationRecord
         "#{current_row[3]}",
         "#{current_row[4]}",
         "#{current_row[5]}",
-        "#{current_row[6]}"
+        "#{current_row[6]}",
+        "#{current_row[7]}"
       ]
     end
 
@@ -54,11 +55,12 @@ class AusTable < ApplicationRecord
           f.puts            "\t\t\t\t<name><![CDATA[#{row[2]}]]></name>"
           f.puts          "\t\t\t</provider>"
           f.puts          "\t\t\t<zone>"
-          f.puts            "\t\t\t\t<ab>#{row[3]}</ab>"
-          f.puts            "\t\t\t\t<name>#{row[4]}</name>"
-          f.puts            "\t\t\t\t<symbol>#{row[5]}</symbol>"
+          f.puts            "\t\t\t\t<description>#{row[3]}</description>"
+          f.puts            "\t\t\t\t<ab>#{row[4]}</ab>"
+          f.puts            "\t\t\t\t<name>#{row[5]}</name>"
+          f.puts            "\t\t\t\t<symbol>#{row[6]}</symbol>"
           f.puts          "\t\t\t</zone>"
-          f.puts          "\t\t\t<modifyDate>#{row[6]}</modifyDate>"
+          f.puts          "\t\t\t<modifyDate>#{row[7]}</modifyDate>"
           f.puts        "\t\t</aus>"
         end
 

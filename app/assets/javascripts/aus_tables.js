@@ -105,6 +105,7 @@ $(document).ready(function() {
       { "data": "number" }, 
       { "data": "provider_id" },
       { "data": "provider_name" },
+      { "data": "service_description" },
       { "data": "zone_ab" },
       { "data": "zone_name" },
       { "data": "zone_symbol" },

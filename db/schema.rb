@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_12_192438) do
+ActiveRecord::Schema.define(version: 2021_02_17_061016) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2020_01_12_192438) do
     t.string "zone_name", default: ""
     t.string "zone_symbol", default: ""
     t.datetime "modification"
+    t.string "service_description", default: ""
     t.index ["modification"], name: "index_aus_tables_on_modification"
     t.index ["number"], name: "index_aus_tables_on_number"
     t.index ["provider_id"], name: "index_aus_tables_on_provider_id"

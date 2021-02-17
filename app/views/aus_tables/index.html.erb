@@ -24,6 +24,7 @@
             <th><%= AusTable.human_attribute_name(:number) %></th>
             <th><%= AusTable.human_attribute_name(:provider_id) %></th>
             <th><%= AusTable.human_attribute_name(:provider_name) %></th>
+            <th><%= AusTable.human_attribute_name(:service_description) %></th>
             <th><%= AusTable.human_attribute_name(:zone_ab) %></th>
             <th><%= AusTable.human_attribute_name(:zone_name) %></th>
             <th><%= AusTable.human_attribute_name(:zone_symbol) %></th>
@@ -46,16 +47,20 @@
               <%= text_field_tag :col3filter, params[:col3filter], id: 'col3filter', 'data-column' => "3", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 4 zone_ab -->
+            <th> <!-- 4 service_description -->
               <%= text_field_tag :col4filter, params[:col4filter], id: 'col4filter', 'data-column' => "4", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 5 zone_name -->
+            <th> <!-- 5 zone_ab -->
               <%= text_field_tag :col5filter, params[:col5filter], id: 'col5filter', 'data-column' => "5", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
-            <th> <!-- 6 zone_symbol -->
+            <th> <!-- 6 zone_name -->
               <%= text_field_tag :col6filter, params[:col6filter], id: 'col6filter', 'data-column' => "6", 
+                    class: 'column_filter form-control input-sm', style: "width: 85%;" %>
+            </th>
+            <th> <!-- 7 zone_symbol -->
+              <%= text_field_tag :col7filter, params[:col7filter], id: 'col7filter', 'data-column' => "7", 
                     class: 'column_filter form-control input-sm', style: "width: 85%;" %>
             </th>
             <th></th>
