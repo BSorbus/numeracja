@@ -124,7 +124,7 @@ GEM
       actionpack
       activesupport
       rails (>= 3.0.0)
-    puma (4.3.6)
+    puma (4.3.8)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -244,7 +244,7 @@ DEPENDENCIES
   mini_racer
   pg (>= 0.18, < 2.0)
   piwik_analytics
-  puma (~> 4.3.3)
+  puma (~> 4.3.8)
   rack-attack
   rails (~> 5.2.4.5)
   redis (~> 4.0)
