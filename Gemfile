@@ -4,13 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4.5'
+gem 'rails', '~> 5.2.6'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 #gem 'puma', '~> 3.11'
-gem 'puma', '~> 4.3.3'
+#gem 'puma', '~> 4.3.3'
+gem 'puma', '~> 5.3.2'
+gem 'nokogiri', '~> 1.11.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -57,7 +59,8 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'font_awesome5_rails'
 gem 'jquery-rails'
 
-gem 'jquery-datatables', '= 1.10.16' #1.10.16 bo z .19 jest jakis problem z wyswietlaniem strzalek sortowania
+#gem 'jquery-datatables', '= 1.10.16' #1.10.16 bo z .19 jest jakis problem z wyswietlaniem strzalek sortowania
+gem 'jquery-datatables', '= 1.10.19.1' #1.10.16 bo z .19 jest jakis problem z wyswietlaniem strzalek sortowania
 gem 'ajax-datatables-rails' #, '= 0.4.0'  jeżeli wywala się na custom_filter
 
 gem 'redis-rails'
