@@ -43,7 +43,6 @@ Rails.application.routes.draw do
     end
 
     get 'datatables/lang'
-
     get 'static_pages/home'
     get 'static_pages/declaration'
 
