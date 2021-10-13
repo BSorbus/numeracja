@@ -11,8 +11,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 #gem 'puma', '~> 3.11'
 #gem 'puma', '~> 4.3.3'
-gem 'puma', '~> 5.3.2'
-gem 'nokogiri', '~> 1.11.5'
+gem 'puma', '~> 5.5.1'
+gem 'nokogiri', '~> 1.12.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -79,4 +79,4 @@ gem 'whenever', require: false
 
 gem 'mina'
 gem 'mina-whenever', require: false
-
+gem "addressable", ">= 2.8.0"

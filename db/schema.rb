@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_17_061016) do
+ActiveRecord::Schema.define(version: 2021_09_06_103313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -141,6 +141,13 @@ ActiveRecord::Schema.define(version: 2021_02_17_061016) do
     t.index ["provider_id"], name: "index_nspc_tables_on_provider_id"
     t.index ["provider_name"], name: "index_nspc_tables_on_provider_name"
     t.index ["zone_ab"], name: "index_nspc_tables_on_zone_ab"
+  end
+
+  create_table "planets", force: :cascade do |t|
+    t.string "name"
+    t.integer "size"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "plmn_tables", force: :cascade do |t|
