@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_06_103313) do
+ActiveRecord::Schema.define(version: 2022_05_09_232405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,19 @@ ActiveRecord::Schema.define(version: 2021_09_06_103313) do
     t.index ["number"], name: "index_ispc_tables_on_number"
     t.index ["provider_id"], name: "index_ispc_tables_on_provider_id"
     t.index ["provider_name"], name: "index_ispc_tables_on_provider_name"
+  end
+
+  create_table "m2m_tables", force: :cascade do |t|
+    t.string "scope", default: ""
+    t.integer "provider_id"
+    t.string "provider_name", default: ""
+    t.datetime "modification"
+    t.string "scope_type", default: ""
+    t.index ["modification"], name: "index_m2m_tables_on_modification"
+    t.index ["provider_id"], name: "index_m2m_tables_on_provider_id"
+    t.index ["provider_name"], name: "index_m2m_tables_on_provider_name"
+    t.index ["scope"], name: "index_m2m_tables_on_scope"
+    t.index ["scope_type"], name: "index_m2m_tables_on_scope_type"
   end
 
   create_table "mnc_tables", force: :cascade do |t|

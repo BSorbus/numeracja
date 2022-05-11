@@ -96,6 +96,11 @@ en:
       title: 'Register of premium rate service numbers'
       navbar: 'PRM'
       url: 'http://bip.uke.gov.pl/wyszukiwarka-rejestr-premium'
+  m2m_tables:
+    index:
+      title_primary: 'Mobile public telecommunications networks'
+      title: 'Numbering Management Table machine - machine'
+      navbar: 'TZN M2M'
   shared:
     basic_info:
       fieldset_title: 'Basic information'
@@ -193,6 +198,12 @@ en:
         provider_id: 'Provider (ID)'
         provider_name: 'Provider (name)'
         modification: 'Modification date'
+      m2m_table:
+        scope: 'Range (number)'
+        provider_id: 'Provider (ID)'
+        provider_name: 'Provider (name)'
+        modification: 'Modification date'
+        scope_type: 'Type'
   date:
     abbr_day_names:
     - Sun

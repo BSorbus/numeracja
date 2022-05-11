@@ -96,6 +96,11 @@ pl:
       title: 'Rejestr numerów wykorzystywanych do świadczenia usługi o podwyższonej opłacie'
       navbar: 'PRM'
       url: 'http://bip.uke.gov.pl/wyszukiwarka-rejestr-premium'
+  m2m_tables:
+    index:
+      title_primary: 'Ruchome (komórkowe) publiczne sieci telekomunikacyjne'
+      title: 'Tablica Zagospodarowania Numeracji maszyna - maszyna'
+      navbar: 'TZN M2M'
   shared:
     basic_info:
       fieldset_title: 'Dane podstawowe'
@@ -193,6 +198,12 @@ pl:
         provider_id: 'Operator (ID)'
         provider_name: 'Operator (nazwa)'
         modification: 'Data modyfikacji'
+      m2m_table:
+        scope: 'Zakres (number)'
+        provider_id: 'Operator (ID)'
+        provider_name: 'Operator (nazwa)'
+        modification: 'Data modyfikacji'
+        scope_type: 'Typ'
   date:
     abbr_day_names:
     - nie

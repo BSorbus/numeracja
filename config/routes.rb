@@ -41,6 +41,9 @@ Rails.application.routes.draw do
     resources :prm_tables, only: [:index] do
       get 'export', on: :collection
     end
+    resources :m2m_tables, only: [:index] do
+      get 'export', on: :collection
+    end
 
     get 'datatables/lang'
     get 'static_pages/home'
