@@ -37,7 +37,7 @@ class M2mTable < ApplicationRecord
         f.puts '<?xml version="1.0" encoding="UTF-8"?>'
         f.puts '<table>'
         f.puts    "\t<header>"
-        f.puts      "\t\t<title>M2M</title>"
+        f.puts      "\t\t<title>T2T9</title>"
         f.puts      "\t\t<date>#{Time.zone.now.strftime('%Y-%m-%d %H:%M:%S')}</date>"
         f.puts    "\t</header>"
         f.puts    "\t<numbers>"
