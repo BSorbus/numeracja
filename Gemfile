@@ -77,4 +77,4 @@ gem 'whenever', require: false
 
 gem 'mina'
 gem 'mina-whenever', require: false
-gem "addressable", ">= 2.8.0"
+gem "addressable", ">= 2.8.1"
