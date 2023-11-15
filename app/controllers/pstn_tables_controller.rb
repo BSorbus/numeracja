@@ -1,7 +1,7 @@
 class PstnTablesController < ApplicationController
 
-  # GET /aus_tables
-  # GET /aus_tables.json
+  # GET /pstn_tables
+  # GET /pstn_tables.json
   def index
     respond_to do |format|
       format.html

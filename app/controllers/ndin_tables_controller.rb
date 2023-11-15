@@ -1,7 +1,7 @@
 class NdinTablesController < ApplicationController
 
-  # GET /aus_tables
-  # GET /aus_tables.json
+  # GET /ndin_tables
+  # GET /ndin_tables.json
   def index
     respond_to do |format|
       format.html

@@ -101,6 +101,10 @@ en:
       title_primary: 'Mobile public telecommunications networks'
       title: 'Numbering Management Table machine - machine'
       navbar: 'TZN M2M'
+  orvc_tables:
+    index:
+      title: 'Rregister of numbers intended only for receiving voice calls'
+      navbar: 'ORVC'
   shared:
     basic_info:
       fieldset_title: 'Basic information'
@@ -204,6 +208,11 @@ en:
         provider_name: 'Provider (name)'
         modification: 'Modification date'
         scope_type: 'Type'
+      orvc_table:
+        phone_number: 'Phone number'
+        date_added: 'Date added'
+        date_deletion: 'Date deletion'
+        modification: 'Modification date'
   date:
     abbr_day_names:
     - Sun

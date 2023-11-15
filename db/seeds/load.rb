@@ -15,6 +15,7 @@ PlmnTable.load_data_from_csv_file
 PstnTable.load_data_from_csv_file
 VoipTable.load_data_from_csv_file
 M2mTable.load_data_from_csv_file
+OrvcTable.load_data_from_csv_file
 
 
 puts " "

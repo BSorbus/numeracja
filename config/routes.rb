@@ -45,6 +45,10 @@ Rails.application.routes.draw do
       get 'export', on: :collection
     end
 
+    resources :orvc_tables, only: [:index] do
+      get 'export', on: :collection
+    end
+
     get 'datatables/lang'
     get 'static_pages/home'
     get 'static_pages/declaration'

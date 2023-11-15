@@ -27,7 +27,19 @@ module PlicbdModule
         cd $STORE_DIR
         curl --cacert $PLI_CERT_DIR/rootcapli.cer --key $PLI_CERT_DIR/ukepli.key --cert $PLI_CERT_DIR/ukepli.cer https://sou2.plicbd.gov.pl/TabliceNumeracjiUKE/$FILE_NAME --output $DESTINATION_FILE --silent
 
-        rm *.csv >> $LOG_FILE
+        rm AUS.csv >> $LOG_FILE
+        rm HESC.csv >> $LOG_FILE
+        rm IN.csv >> $LOG_FILE
+        rm ISPC.csv >> $LOG_FILE
+        rm M2M.csv >> $LOG_FILE
+        rm MNC.csv >> $LOG_FILE
+        rm NDS.csv >> $LOG_FILE
+        rm NDSI.csv >> $LOG_FILE
+        rm NRNP.csv >> $LOG_FILE
+        rm NSPC.csv >> $LOG_FILE
+        rm PLMN.csv >> $LOG_FILE
+        rm PSTN.csv >> $LOG_FILE
+        rm VOIP.csv >> $LOG_FILE
         unzip $DESTINATION_FILE >> $LOG_FILE
 
         DATE_TIME_END=$(date +"%Y.%m.%d %H:%M:%S")

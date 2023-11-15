@@ -1,7 +1,7 @@
 class HescTablesController < ApplicationController
 
-  # GET /aus_tables
-  # GET /aus_tables.json
+  # GET /hesc_tables
+  # GET /hesc_tables.json
   def index
     respond_to do |format|
       format.html

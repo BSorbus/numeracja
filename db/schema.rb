@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_09_232405) do
+ActiveRecord::Schema.define(version: 2023_11_12_005501) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -154,6 +154,17 @@ ActiveRecord::Schema.define(version: 2022_05_09_232405) do
     t.index ["provider_id"], name: "index_nspc_tables_on_provider_id"
     t.index ["provider_name"], name: "index_nspc_tables_on_provider_name"
     t.index ["zone_ab"], name: "index_nspc_tables_on_zone_ab"
+  end
+
+  create_table "orvc_tables", force: :cascade do |t|
+    t.string "phone_number", default: ""
+    t.datetime "date_added"
+    t.datetime "date_deletion"
+    t.datetime "modification"
+    t.index ["date_added"], name: "index_orvc_tables_on_date_added"
+    t.index ["date_deletion"], name: "index_orvc_tables_on_date_deletion"
+    t.index ["modification"], name: "index_orvc_tables_on_modification"
+    t.index ["phone_number"], name: "index_orvc_tables_on_phone_number"
   end
 
   create_table "planets", force: :cascade do |t|

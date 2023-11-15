@@ -1,7 +1,7 @@
 class NspcTablesController < ApplicationController
 
-  # GET /aus_tables
-  # GET /aus_tables.json
+  # GET /nscp_tables
+  # GET /nscp_tables.json
   def index
     respond_to do |format|
       format.html

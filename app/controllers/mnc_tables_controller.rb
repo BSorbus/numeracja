@@ -1,7 +1,7 @@
 class MncTablesController < ApplicationController
 
-  # GET /aus_tables
-  # GET /aus_tables.json
+  # GET /mnc_tables
+  # GET /mnc_tables.json
   def index
     respond_to do |format|
       format.html

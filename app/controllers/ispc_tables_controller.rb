@@ -1,7 +1,7 @@
 class IspcTablesController < ApplicationController
 
-  # GET /aus_tables
-  # GET /aus_tables.json
+  # GET /ispc_tables
+  # GET /ispc_tables.json
   def index
     respond_to do |format|
       format.html
