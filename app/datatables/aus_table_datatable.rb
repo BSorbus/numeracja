@@ -25,7 +25,8 @@ class AusTableDatatable < AjaxDatatablesRails::ActiveRecord
         zone_ab:              record.zone_ab,
         zone_name:            record.zone_name,
         zone_symbol:          record.zone_symbol,
-        modification:         record.modification.strftime("%Y-%m-%d %H:%M")
+        modification:         record.modification.strftime("%Y-%m-%d")
+        # modification:         record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

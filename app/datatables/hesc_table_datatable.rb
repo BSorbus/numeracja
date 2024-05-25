@@ -21,7 +21,8 @@ class HescTableDatatable < AjaxDatatablesRails::ActiveRecord
         provider_name:              record.provider_name,
         service_description:        record.service_description,
         entity_providing_services:  record.entity_providing_services,
-        modification:               record.modification.strftime("%Y-%m-%d %H:%M")
+        modification:               record.modification.strftime("%Y-%m-%d")
+        # modification:               record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

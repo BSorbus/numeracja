@@ -19,7 +19,8 @@ class NdinTableDatatable < AjaxDatatablesRails::ActiveRecord
         provider_id:        record.provider_id,
         provider_name:      record.provider_name,
         service_type_name:  record.service_type_name,
-        modification:       record.modification.strftime("%Y-%m-%d %H:%M")
+        modification:       record.modification.strftime("%Y-%m-%d")
+        # modification:       record.modification.strftime("%Y-%m-%d %H:%M")
       }
     end
   end

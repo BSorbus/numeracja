@@ -100,8 +100,8 @@ $(document).ready(function() {
       { "data": "id", "visible": false }, 
       { "data": "phone_number" }, 
       { "data": "date_added" },
-      { "data": "date_deletion" },
-      { "data": "modification" }
+      { "data": "date_deletion" }
+      // { "data": "modification" }
     ],
     order: [[ 1, "asc" ]],
     language: {
