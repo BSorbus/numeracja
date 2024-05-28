@@ -4,7 +4,7 @@ class OrvcTable < ApplicationRecord
 
   def self.load_data_from_csv_file
     @buffer = []
-    columns = [ :phone_number, :date_added, :date_deletion, :modification ]
+    columns = [ :phone_number, :date_added, :date_deletion ]
 
     CSV.foreach("#{Rails.application.secrets.csv_files_path}/ORVC.csv", { 
                                                  encoding: "WINDOWS-1250:UTF-8", 
@@ -18,7 +18,7 @@ class OrvcTable < ApplicationRecord
     end 
     ActiveRecord::Base.connection.execute("TRUNCATE orvc_tables RESTART IDENTITY")
     OrvcTable.import columns, @buffer, validate: false    
-    buffer_to_xml(@buffer)   
+    buffer_to_xml(@buffer)
   end
 
   private
@@ -27,8 +27,7 @@ class OrvcTable < ApplicationRecord
       @buffer << [
         "#{current_row[0]}",
         "#{current_row[1]}", 
-        "#{current_row[2]}",
-        "#{current_row[3]}"
+        "#{current_row[2]}"
       ]
     end
 
@@ -47,7 +46,6 @@ class OrvcTable < ApplicationRecord
           f.puts          "\t\t\t<phoneNumber>#{row[0]}</phoneNumber>"
           f.puts          "\t\t\t<dateAdded>#{row[1]}</dateAdded>"
           f.puts          "\t\t\t<dateDeletion>#{row[2]}</dateDeletion>"
-          f.puts          "\t\t\t<modifyDate>#{row[3]}</modifyDate>"
           f.puts        "\t\t</orvc>"
         end
 
