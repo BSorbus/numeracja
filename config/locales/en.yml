@@ -103,7 +103,7 @@ en:
       navbar: 'TZN M2M'
   orvc_tables:
     index:
-      title: 'Rregister of numbers intended only for receiving voice calls'
+      title: 'List of numbers intended only for receiving voice calls'
       navbar: 'ORVC'
   shared:
     basic_info:

@@ -103,7 +103,7 @@ pl:
       navbar: 'TZN M2M'
   orvc_tables:
     index:
-      title: 'Rejestr numerów przeznaczonych do odbierania połączeń głosowych'
+      title: 'Wykaz numerów przeznaczonych wyłącznie do odbierania połączeń głosowych'
       navbar: 'ORVC'
   shared:
     basic_info:
