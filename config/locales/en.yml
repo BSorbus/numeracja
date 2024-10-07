@@ -91,7 +91,7 @@ en:
       title_primary: 'Routing numbers'
       title: 'Numbering Management Table of routing numbers'
       navbar: 'TZN NRNP'
-  prm_tables:
+  prm_link:
     index:
       title: 'Register of premium rate service numbers'
       navbar: 'PRM'
@@ -105,6 +105,11 @@ en:
     index:
       title: 'List of numbers intended only for receiving voice calls'
       navbar: 'ORVC'
+  ab_link:
+    index:
+      title: 'The use of AB digits in national numbering'
+      navbar: 'AB numbers'
+      url: 'http://bip.uke.gov.pl/numeracja/wykorzystanie-cyfr-ab/'
   shared:
     basic_info:
       fieldset_title: 'Basic information'

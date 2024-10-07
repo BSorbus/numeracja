@@ -91,7 +91,7 @@ pl:
       title_primary: 'Numery rutingowe'
       title: 'Tablica Zagospodarowania numerów rutingowych NR NP'
       navbar: 'TZN NRNP'
-  prm_tables:
+  prm_link:
     index:
       title: 'Rejestr numerów wykorzystywanych do świadczenia usługi o podwyższonej opłacie'
       navbar: 'PRM'
@@ -105,6 +105,11 @@ pl:
     index:
       title: 'Wykaz numerów przeznaczonych wyłącznie do odbierania połączeń głosowych'
       navbar: 'ORVC'
+  ab_link:
+    index:
+      title: 'Wykorzystanie cyfr AB w numeracji krajowej'
+      navbar: 'Numery AB'
+      url: 'http://bip.uke.gov.pl/numeracja/wykorzystanie-cyfr-ab/'
   shared:
     basic_info:
       fieldset_title: 'Dane podstawowe'

@@ -38,9 +38,9 @@ Rails.application.routes.draw do
     resources :voip_tables, only: [:index] do
       get 'export', on: :collection
     end
-    resources :prm_tables, only: [:index] do
-      get 'export', on: :collection
-    end
+    # resources :prm_tables, only: [:index] do
+    #   get 'export', on: :collection
+    # end
     resources :m2m_tables, only: [:index] do
       get 'export', on: :collection
     end
