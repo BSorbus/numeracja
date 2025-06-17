@@ -5,7 +5,7 @@ class OrvcTableDatatable < AjaxDatatablesRails::ActiveRecord
       id:                 { source: "OrvcTable.id", searchable: false },
       phone_number:       { source: "OrvcTable.phone_number", cond: :eq },
       date_added:         { source: "OrvcTable.date_added" },
-      date_deletion:      { source: "OrvcTable.date_added" }
+      date_deletion:      { source: "OrvcTable.date_deletion" }
       # modification:       { source: "OrvcTable.modification" }
     }
   end
@@ -18,9 +18,6 @@ class OrvcTableDatatable < AjaxDatatablesRails::ActiveRecord
         date_added:         record.date_added.present? ? record.date_added.strftime("%Y-%m-%d") : "",
         date_deletion:      record.date_deletion.present? ? record.date_deletion.strftime("%Y-%m-%d") : ""
         # modification:       record.modification.present? ? record.modification.strftime("%Y-%m-%d") : ""
-        # date_added:         record.date_added.present? ? record.date_added.strftime("%Y-%m-%d %H:%M") : "",
-        # date_deletion:      record.date_deletion.present? ? record.date_deletion.strftime("%Y-%m-%d %H:%M") : "",
-        # modification:       record.modification.present? ? record.modification.strftime("%Y-%m-%d %H:%M") : ""
       }
     end
   end
