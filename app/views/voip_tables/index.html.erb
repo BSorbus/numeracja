@@ -1,16 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <h3 class="center"><span class="index-title hidden-xs"><%= t '.title_primary' %></span></h3>
-      <h4 class="center">
-        <span class="index-title hidden-xs"><%= t '.title' %></span>
-        <span class="index-title visible-xs"><%= t '.navbar' %></span>
-      </h4>
-    </div> <!--/col-sm-12 -->
-  </div> <!--/row -->
-</div> <!--/container -->
-
-<div class="container-fluid">
+  <br>
   <div class="row">
     <div class="col-sm-12">
       <table id="voip_tables-datatable" class="hover cell-border" cellspacing="0" width="100%", 
@@ -18,6 +7,13 @@
         data-locale_url="<%= datatables_lang_path(format: :json) %>", 
         data-export_csv_url="<%= export_voip_tables_path(format: :csv) %>",
         data-export_xml_url="<%= export_voip_tables_path(format: :xml) %>">
+        <caption style="caption-side: top;">
+          <h1 class="h4-style center">
+            <span class="index-title hidden-xs"><%= t '.title_primary' %></span><br>
+            <span class="h5-style index-title hidden-xs"><%= t '.title' %></span>
+            <span class="h5-style index-title visible-xs"><%= t '.navbar' %></span>
+          </h1>
+        </caption>
         <thead>
           <tr>
             <th>id</th>
